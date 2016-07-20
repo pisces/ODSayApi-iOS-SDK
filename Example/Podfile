@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ODSayApiSDK_Example' do
+  pod 'ODSayApiSDK', :path => '../'
+
+  target 'ODSayApiSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
