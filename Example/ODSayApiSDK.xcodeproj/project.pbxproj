@@ -15,6 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		76D5F1AABF797BE7EAFA3740 /* Pods_ODSayApiSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933A39A3FBE5A907C9CAF62D /* Pods_ODSayApiSDK_Tests.framework */; };
 		9F55613C306F2DE898AF0693 /* Pods_ODSayApiSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B386F00346F9E99AE50483 /* Pods_ODSayApiSDK_Example.framework */; };
+		DCA237A31D3F5E5100B56EF3 /* ODSayApiAppCenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA237A21D3F5E5100B56EF3 /* ODSayApiAppCenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		933A39A3FBE5A907C9CAF62D /* Pods_ODSayApiSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODSayApiSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C8E79B831D16B157757476 /* Pods-ODSayApiSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODSayApiSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ODSayApiSDK_Example/Pods-ODSayApiSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D0486491FF75F98E7FBD6797 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DCA237A21D3F5E5100B56EF3 /* ODSayApiAppCenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODSayApiAppCenterTest.swift; sourceTree = "<group>"; };
 		E1B386F00346F9E99AE50483 /* Pods_ODSayApiSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODSayApiSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75F28BE0F35A640140238BD /* Pods-ODSayApiSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODSayApiSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ODSayApiSDK_Tests/Pods-ODSayApiSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				DCA237A21D3F5E5100B56EF3 /* ODSayApiAppCenterTest.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA237A31D3F5E5100B56EF3 /* ODSayApiAppCenterTest.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 320ABD74AB8C7DCC5BF6D9D4 /* Pods-ODSayApiSDK_Tests.debug.xcconfig */;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -524,8 +529,21 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"ODSayApiSDK\"",
+					"-framework",
+					"\"PSFoundation\"",
+					"-framework",
+					"\"apxml\"",
+					"-framework",
+					"\"w3action\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODSayApiSDK_Example.app/ODSayApiSDK_Example";
 			};
 			name = Debug;
 		};
@@ -533,14 +551,28 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F75F28BE0F35A640140238BD /* Pods-ODSayApiSDK_Tests.release.xcconfig */;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"ODSayApiSDK\"",
+					"-framework",
+					"\"PSFoundation\"",
+					"-framework",
+					"\"apxml\"",
+					"-framework",
+					"\"w3action\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODSayApiSDK_Example.app/ODSayApiSDK_Example";
 			};
 			name = Release;
 		};

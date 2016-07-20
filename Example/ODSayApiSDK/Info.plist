@@ -34,6 +34,27 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
-	</array>
+    </array>
+    <key>ODSayApiServiceKey</key>
+    <string>NDQ0My0xNDYzMTA1MjY4NzczLWViZThlMWQzLWZhYmMtNDY1ZS1hOGUxLWQzZmFiY2U2NWUxMQ==</string>
+    <key>ODSayApiSvcid</key>
+    <string>f78480bc1c06734607e4c7107d0642f3</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>openapi.io</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSThirdPartyExceptionMinimumTLSVersion</key>
+                <string>TLSv1.1</string>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
 </dict>
 </plist>

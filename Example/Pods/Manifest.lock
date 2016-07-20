@@ -1,0 +1,25 @@
+PODS:
+  - apxml (1.0)
+  - ODSayApiSDK (1.0.0):
+    - w3action
+  - PSFoundation (1.0.51)
+  - w3action (1.3.4):
+    - apxml
+    - PSFoundation
+
+DEPENDENCIES:
+  - ODSayApiSDK (from `../`)
+
+EXTERNAL SOURCES:
+  ODSayApiSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  apxml: 0930b839c8be6734f5091f8c8889b00f7d59559c
+  ODSayApiSDK: ef0204361e81660ce87be60ffe0426cf82bf86ed
+  PSFoundation: 8546e1ab994991c75427422309317f55088c5a79
+  w3action: ef0f8a85c50a280bc5cd44f3999178c70e94e8bf
+
+PODFILE CHECKSUM: 84708def651e014a2e88fda8a2b55e43dc20e20a
+
+COCOAPODS: 1.0.0

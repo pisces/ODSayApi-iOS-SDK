@@ -1,0 +1,6 @@
+framework module ODSayApiSDK {
+  umbrella header "ODSayApiSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
