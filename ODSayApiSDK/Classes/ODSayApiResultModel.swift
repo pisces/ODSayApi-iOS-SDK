@@ -20,14 +20,14 @@ public class ODSayApiResult: AbstractJSONModel {
     }
     
     public class PathSearchExit: ODSayApiResult {
-        public var busCount: UInt = 0
-        public var endRadius: UInt = 0
-        public var outTrafficCheck: UInt = 0
-        public var pointDistance: UInt = 0
-        public var searchType: UInt = 0
-        public var startRadius: UInt = 0
-        public var subwayBusCount: UInt = 0
-        public var subwayCount: UInt = 0
+        public var busCount: Int = 0
+        public var endRadius: Int = 0
+        public var outTrafficCheck: Int = 0
+        public var pointDistance: Int = 0
+        public var searchType: Int = 0
+        public var startRadius: Int = 0
+        public var subwayBusCount: Int = 0
+        public var subwayCount: Int = 0
         public var path: [ODSayApiModel.Path]?
         
         override public func setProperties(object: AnyObject?) {
@@ -41,7 +41,7 @@ public class ODSayApiResult: AbstractJSONModel {
 }
 
 public class ODSayApiModel {
-    public enum SubwayCode: UInt {
+    public enum SubwayCode: Int {
         case
         L1  = 1,
         L2  = 2,
@@ -57,7 +57,7 @@ public class ODSayApiModel {
         LSB  = 106
     }
     
-    public enum TrafficType: UInt {
+    public enum TrafficType: Int {
         case
         Subway  = 1,
         Bus     = 2,
@@ -65,7 +65,7 @@ public class ODSayApiModel {
     }
     
     public class Path: AbstractJSONModel {
-        public var pathType: UInt = 0
+        public var pathType: Int = 0
         public private(set) var info: ODSayApiModel.Info?
         public private(set) var subPath: [ODSayApiModel.SubPath]?
         public private(set) var subPathExcludesWalk: [ODSayApiModel.SubPath]?
@@ -81,7 +81,7 @@ public class ODSayApiModel {
                     subPathExcludesWalk = []
                     
                     for dict in rawSubPath {
-                        let trafficType = dict["trafficType"] as? UInt
+                        let trafficType = dict["trafficType"] as? Int
                         var subPathItem: SubPath?
                         
                         if trafficType == TrafficType.Bus.rawValue {
@@ -106,16 +106,16 @@ public class ODSayApiModel {
     }
     
     public class Info: AbstractJSONModel {
-        public var busStationCount: UInt = 0
-        public var busTransitCount: UInt = 0
-        public var payment: UInt = 0
-        public var subwayStationCount: UInt = 0
-        public var subwayTransitCount: UInt = 0
-        public var totalDistance: UInt = 0
-        public var totalStationCount: UInt = 0
-        public var totalTime: UInt = 0
-        public var totalWalk: UInt = 0
-        public var trafficDistance: UInt = 0
+        public var busStationCount: Int = 0
+        public var busTransitCount: Int = 0
+        public var payment: Int = 0
+        public var subwayStationCount: Int = 0
+        public var subwayTransitCount: Int = 0
+        public var totalDistance: Int = 0
+        public var totalStationCount: Int = 0
+        public var totalTime: Int = 0
+        public var totalWalk: Int = 0
+        public var trafficDistance: Int = 0
         public var totalWalkTime: Int = 0
         public var firstStartStation: String?
         public var lastEndStation: String?
@@ -123,14 +123,14 @@ public class ODSayApiModel {
     }
     
     public class SubPath: AbstractJSONModel {
-        public var distance: UInt = 0
-        public var trafficType: UInt = 0
+        public var distance: Int = 0
+        public var trafficType: Int = 0
         public var sectionTime: Int = 0
         
         public class Transport: SubPath {
-            public var endID: UInt = 0
-            public var stationCount: UInt = 0
-            public var startID: UInt = 0
+            public var endID: Int = 0
+            public var stationCount: Int = 0
+            public var startID: Int = 0
             public var endX: Double = 0.0
             public var endY: Double = 0.0
             public var startX: Double = 0.0
@@ -161,7 +161,7 @@ public class ODSayApiModel {
         }
         
         public class Subway: Transport {
-            public var wayCode: UInt = 0
+            public var wayCode: Int = 0
             public var startExitX: Double = 0.0
             public var startExitY: Double = 0.0
             public var door: String?
@@ -185,14 +185,14 @@ public class ODSayApiModel {
     
     public class Lane {
         public class Bus: AbstractJSONModel {
-            public var busID: UInt = 0
-            public var busNo: UInt = 0
-            public var type: UInt = 0
+            public var busID: Int = 0
+            public var busNo: Int = 0
+            public var type: Int = 0
         }
         
         public class Subway: AbstractJSONModel {
-            public var subwayCityCode: UInt = 0
-            public var subwayCode: UInt = 0
+            public var subwayCityCode: Int = 0
+            public var subwayCode: Int = 0
             public var name: String?
         }
     }
@@ -210,8 +210,8 @@ public class ODSayApiModel {
     }
     
     public class Station: AbstractJSONModel {
-        public var index: UInt = 0
-        public var stationID: UInt = 0
+        public var index: Int = 0
+        public var stationID: Int = 0
         public var x: Double = 0
         public var y: Double = 0
         public var stationName: String?
