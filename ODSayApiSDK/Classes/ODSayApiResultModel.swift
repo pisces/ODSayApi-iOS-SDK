@@ -41,6 +41,13 @@ public class ODSayApiResult: AbstractJSONModel {
 }
 
 public class ODSayApiModel {
+    public enum PathType: Int {
+        case
+        Subway = 1,
+        Bus = 2,
+        SubwayAndBus = 3
+    }
+    
     public enum SubwayCode: Int {
         case
         L1  = 1,
@@ -52,9 +59,19 @@ public class ODSayApiModel {
         L7  = 7,
         L8  = 8,
         L9  = 9,
-        LK  = 104,
-        LB  = 105,
-        LSB  = 106
+        Incheon  = 21,
+        Bundang  = 100,
+        Airport  = 101,
+        Kyungui  = 104,
+        Ever  = 107,
+        Kyungchoon  = 108,
+        SinBundang  = 109,
+        Uijeongbu  = 110,
+        Suin  = 111
+        
+        func contains(rawValue: Int) -> Bool {
+            return rawValue >= L1.rawValue && rawValue <= Suin.rawValue
+        }
     }
     
     public enum TrafficType: Int {
@@ -62,6 +79,25 @@ public class ODSayApiModel {
         Subway  = 1,
         Bus     = 2,
         Walk    = 3
+    }
+    
+    public enum BusType: Int {
+        case
+        General         = 1,
+        Seat            = 2,
+        Town            = 3,
+        DirectlySeat    = 4,
+        Airport         = 5,
+        TrunkExpress    = 6,
+        Suburban        = 10,
+        Trunk           = 11,
+        Branch          = 12,
+        Cycle           = 13,
+        Wide            = 14,
+        Express         = 15,
+        FarmOrSea       = 20,
+        Jeju            = 22,
+        ExpressTrunk    = 26
     }
     
     public class Path: AbstractJSONModel {
@@ -120,6 +156,14 @@ public class ODSayApiModel {
         public var firstStartStation: String?
         public var lastEndStation: String?
         public var mapObj: String?
+        
+        public var paymentString: String {
+            get {
+                let formatter = NSNumberFormatter()
+                formatter.numberStyle = .DecimalStyle
+                return formatter.stringFromNumber(payment)!
+            }
+        }
     }
     
     public class SubPath: AbstractJSONModel {
@@ -137,6 +181,7 @@ public class ODSayApiModel {
             public var startY: Double = 0.0
             public var endName: String?
             public var startName: String?
+            public private(set) var lane: [Lane]?
             public private(set) var passStopList: PassStopList?
             
             override public func setProperties(object: AnyObject?) {
@@ -149,8 +194,6 @@ public class ODSayApiModel {
         }
         
         public class Bus: Transport {
-            public private(set) var lane: [Lane.Bus]?
-            
             override public func setProperties(object: AnyObject?) {
                 super.setProperties(object)
                 
@@ -167,7 +210,6 @@ public class ODSayApiModel {
             public var door: String?
             public var startExitNo: String?
             public var way: String?
-            public private(set) var lane: [Lane.Subway]?
             
             override public func setProperties(object: AnyObject?) {
                 super.setProperties(object)
@@ -183,14 +225,14 @@ public class ODSayApiModel {
         }
     }
     
-    public class Lane {
-        public class Bus: AbstractJSONModel {
+    public class Lane: AbstractJSONModel {
+        public class Bus: Lane {
             public var busID: Int = 0
             public var busNo: Int = 0
             public var type: Int = 0
         }
         
-        public class Subway: AbstractJSONModel {
+        public class Subway: Lane {
             public var subwayCityCode: Int = 0
             public var subwayCode: Int = 0
             public var name: String?
