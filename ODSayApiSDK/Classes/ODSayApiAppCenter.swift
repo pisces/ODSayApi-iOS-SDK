@@ -13,12 +13,13 @@ import w3action
 
 public enum ODSayApiPath: String {
     case
-    PathSearchExit            = "PathSearch_Exit"
+    MapLoadLane = "map/LoadLane",
+    PathSearchExit = "Path/PathSearch_Exit"
 }
 
 public class ODSayApiAppCenter: NSObject {
     
-    let kODSayApiBasePath = "http://api.openapi.io/traffic/appleTree/v1/0/Path/"
+    let kODSayApiBasePath = "http://api.openapi.io/traffic/appleTree/v1/0/"
     let kODSayApiServiceKey = "ODSayApiServiceKey"
     let kODSayApiSvcid = "ODSayApiSvcid"
     let kODSayApiParamsEcho = "echo"

@@ -11,6 +11,10 @@ import PSFoundation
 
 public class ODSayApiParameterSet: AbstractModel {
     
+    public class MapLoadLane: ODSayApiParameterSet {
+        public var param: String?
+    }
+    
     public class PathSearchExit: ODSayApiParameterSet {
         public var changeCount: UInt = 0
         public var optCount: UInt = 0
