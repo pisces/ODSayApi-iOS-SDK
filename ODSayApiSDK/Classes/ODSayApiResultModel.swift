@@ -20,15 +20,54 @@ public class ODSayApiResult: AbstractJSONModel {
     }
     
     public class MapLoadLane: ODSayApiResult {
-        public var boundary: ODSayApiModel.Graph.Boundary?
-        public var lane: [ODSayApiModel.Graph.Lane]?
+        public var boundary: Boundary?
+        public var lane: [Lane]?
         
         override public func setProperties(object: AnyObject?) {
             super.setProperties(object)
             
             if let object = object {
-                boundary = self.childWithKey("boundary", classType: ODSayApiModel.Graph.Boundary.self) as? ODSayApiModel.Graph.Boundary
-                lane = self.childWithKey("lane", classType: ODSayApiModel.Graph.Lane.self) as? [ODSayApiModel.Graph.Lane]
+                boundary = self.childWithKey("boundary", classType: Boundary.self) as? Boundary
+                lane = self.childWithKey("lane", classType: Lane.self) as? [Lane]
+            }
+        }
+        
+        public class Boundary: AbstractJSONModel {
+            public var left: Double = 0.0
+            public var top: Double = 0.0
+            public var right: Double = 0.0
+            public var bottom: Double = 0.0
+        }
+        
+        public class Lane: AbstractJSONModel {
+            public var trafficType: Int = 0
+            public var type: Int = 0
+            public var section: [Section]?
+            
+            override public func setProperties(object: AnyObject?) {
+                super.setProperties(object)
+                
+                if let object = object {
+                    trafficType = object["class"] as! Int
+                    section = self.childWithKey("section", classType: Section.self) as? [Section]
+                }
+            }
+        }
+        
+        public class Pos: AbstractJSONModel {
+            public var x: Double = 0.0
+            public var y: Double = 0.0
+        }
+        
+        public class Section: AbstractJSONModel {
+            public var graphPos: [Pos]?
+            
+            override public func setProperties(object: AnyObject?) {
+                super.setProperties(object)
+                
+                if let object = object {
+                    graphPos = self.childWithKey("graphPos", classType: Pos.self) as? [Pos]
+                }
             }
         }
     }
@@ -55,6 +94,25 @@ public class ODSayApiResult: AbstractJSONModel {
 }
 
 public class ODSayApiModel {
+    public enum BusType: Int {
+        case
+        General         = 1,
+        Seat            = 2,
+        Town            = 3,
+        DirectlySeat    = 4,
+        Airport         = 5,
+        TrunkExpress    = 6,
+        Suburban        = 10,
+        Trunk           = 11,
+        Branch          = 12,
+        Cycle           = 13,
+        Wide            = 14,
+        Express         = 15,
+        FarmOrSea       = 20,
+        Jeju            = 22,
+        ExpressTrunk    = 26
+    }
+    
     public enum PathType: Int {
         case
         Subway = 1,
@@ -82,10 +140,6 @@ public class ODSayApiModel {
         SinBundang  = 109,
         Uijeongbu  = 110,
         Suin  = 111
-        
-        func contains(rawValue: Int) -> Bool {
-            return rawValue >= L1.rawValue && rawValue <= Suin.rawValue
-        }
     }
     
     public enum TrafficType: Int {
@@ -93,66 +147,6 @@ public class ODSayApiModel {
         Subway  = 1,
         Bus     = 2,
         Walk    = 3
-    }
-    
-    public enum BusType: Int {
-        case
-        General         = 1,
-        Seat            = 2,
-        Town            = 3,
-        DirectlySeat    = 4,
-        Airport         = 5,
-        TrunkExpress    = 6,
-        Suburban        = 10,
-        Trunk           = 11,
-        Branch          = 12,
-        Cycle           = 13,
-        Wide            = 14,
-        Express         = 15,
-        FarmOrSea       = 20,
-        Jeju            = 22,
-        ExpressTrunk    = 26
-    }
-    
-    public class Graph {
-        public class Boundary: AbstractJSONModel {
-            public var left: Double = 0.0
-            public var top: Double = 0.0
-            public var right: Double = 0.0
-            public var bottom: Double = 0.0
-        }
-        
-        public class Lane: AbstractJSONModel {
-            public var trafficType: Int = 0
-            public var type: Int = 0
-            public var section: [ODSayApiModel.Graph.Section]?
-            
-            override public func setProperties(object: AnyObject?) {
-                super.setProperties(object)
-                
-                if let object = object {
-                    trafficType = object["class"] as! Int
-                    section = self.childWithKey("section", classType: ODSayApiModel.Graph.Section.self) as? [ODSayApiModel.Graph.Section]
-                }
-            }
-        }
-        
-        public class Pos: AbstractJSONModel {
-            public var x: Double = 0.0
-            public var y: Double = 0.0
-        }
-        
-        public class Section: AbstractJSONModel {
-            public var graphPos: [ODSayApiModel.Graph.Pos]?
-            
-            override public func setProperties(object: AnyObject?) {
-                super.setProperties(object)
-                
-                if let object = object {
-                    graphPos = self.childWithKey("graphPos", classType: ODSayApiModel.Graph.Pos.self) as? [ODSayApiModel.Graph.Pos]
-                }
-            }
-        }
     }
     
     public class Path: AbstractJSONModel {
