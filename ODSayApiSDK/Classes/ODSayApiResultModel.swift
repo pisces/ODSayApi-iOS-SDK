@@ -240,6 +240,22 @@ public class ODSayApiModel {
                     passStopList = self.childWithKey("passStopList", classType: PassStopList.self) as? PassStopList
                 }
             }
+            
+            override public func format(value: AnyObject!, forKey key: String!) -> AnyObject! {
+                if value is String {
+                    return (value as! String).decode
+                }
+                
+                return super.format(value, forKey: key)
+            }
+            
+            override public func unformat(value: AnyObject!, forKey key: String!) -> AnyObject! {
+                if value is String {
+                    return (value as! String).encode
+                }
+                
+                return super.unformat(value, forKey: key)
+            }
         }
         
         public class Bus: Transport {
