@@ -151,6 +151,8 @@ public class ODSayApiModel {
     
     public class Path: AbstractJSONModel {
         public var pathType: Int = 0
+        public var attributedInfoString: NSAttributedString?
+        public var attributedSubPathString: NSAttributedString?
         public private(set) var info: ODSayApiModel.Info?
         public private(set) var subPath: [ODSayApiModel.SubPath]?
         public private(set) var subPathExcludesWalk: [ODSayApiModel.SubPath]?
