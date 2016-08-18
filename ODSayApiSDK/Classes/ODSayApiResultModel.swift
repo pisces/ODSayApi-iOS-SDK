@@ -168,20 +168,12 @@ public class ODSayApiModel {
                     subPathExcludesWalk = []
                     
                     for dict in rawSubPath {
-                        let trafficType = dict["trafficType"] as? Int
-                        var subPathItem: SubPath?
-                        
-                        if trafficType == TrafficType.Bus.rawValue {
-                            subPathItem = SubPath.Bus(object: dict)
-                        } else if trafficType == TrafficType.Subway.rawValue {
-                            subPathItem = SubPath.Subway(object: dict)
-                        } else if trafficType == TrafficType.Walk.rawValue {
-                            subPathItem = SubPath.Walk(object: dict)
-                        }
+                        var subPathItem: SubPath? = SubPath.create(dict)
                         
                         if let subPathItem = subPathItem {
                             subPath!.append(subPathItem)
                             
+                            let trafficType = dict["trafficType"] as? Int
                             if trafficType != TrafficType.Walk.rawValue {
                                 subPathExcludesWalk?.append(subPathItem)
                             }
@@ -221,6 +213,20 @@ public class ODSayApiModel {
         public var distance: Int = 0
         public var trafficType: Int = 0
         public var sectionTime: Int = 0
+        
+        public class func create(source: AnyObject) -> SubPath? {
+            let trafficType = source["trafficType"] as? Int
+            if trafficType == ODSayApiModel.TrafficType.Bus.rawValue {
+                return SubPath.Bus(object: source)
+            }
+            if trafficType == ODSayApiModel.TrafficType.Subway.rawValue {
+                return SubPath.Subway(object: source)
+            }
+            if trafficType == ODSayApiModel.TrafficType.Walk.rawValue {
+                return SubPath.Walk(object: source)
+            }
+            return nil
+        }
         
         public class Transport: SubPath {
             public var endID: Int = 0
@@ -303,6 +309,15 @@ public class ODSayApiModel {
             public var subwayCityCode: Int = 0
             public var subwayCode: Int = 0
             public var name: String?
+            
+            public var shortName: String? {
+                if let name = name {
+                    let range = NSRange(location: 0, length: name.characters.count)
+                    let regex = try? NSRegularExpression(pattern: "(.*)\\s", options: [.CaseInsensitive])
+                    return regex?.stringByReplacingMatchesInString(name, options: .ReportCompletion, range: range, withTemplate: "")
+                }
+                return nil
+            }
         }
     }
     
