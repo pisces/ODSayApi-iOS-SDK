@@ -75,7 +75,7 @@ public class ODSayApiAppCenter: NSObject {
                 if (result != nil && completion != nil) {
                     if let dict = result as? NSDictionary {
                         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-                            let model = Y(object: dict["result"])
+                            let model = Y(object: dict["result"], params: params)
                             
                             dispatch_async(dispatch_get_main_queue()) {
                                 completion!(result: model, error: nil)

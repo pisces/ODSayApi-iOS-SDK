@@ -10,12 +10,19 @@
 import PSFoundation
 
 public class ODSayApiResult: AbstractJSONModel {
+    public private(set) var params: ODSayApiParameterSet!
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     required override public init(object: AnyObject?) {
+        super.init(object: object)
+    }
+    
+    required public init(object: AnyObject?, params: ODSayApiParameterSet?) {
+        self.params = params
+        
         super.init(object: object)
     }
     
@@ -88,6 +95,55 @@ public class ODSayApiResult: AbstractJSONModel {
             
             if let object = object {
                 path = self.childWithKey("path", classType: ODSayApiModel.Path.self) as? [ODSayApiModel.Path]
+                doPathProcessing()
+            }
+        }
+        
+        private func doPathProcessing() {
+            if let paths = path {
+                let params = self.params as! ODSayApiParameterSet.PathSearchExit
+                
+                for path in paths {
+                    if let subPaths = path.subPath {
+                        var i = 0
+                        
+                        for subPath in subPaths {
+                            if subPath is ODSayApiModel.SubPath.Walk {
+                                let prevSubPath: ODSayApiModel.SubPath? = (i-1) >= 0 && (i-1) < subPaths.count ? subPaths[i-1] : nil
+                                let nexSubPath: ODSayApiModel.SubPath? = (i+1) >= 0 && (i+1) < subPaths.count ? subPaths[i+1] : nil
+                                
+                                if i == 0 {
+                                    subPath.startName = params.startName
+                                    subPath.startX = params.SX
+                                    subPath.startY = params.SY
+                                    subPath.endName = nexSubPath?.startName
+                                    subPath.endX = params.EX
+                                    subPath.endY = params.EY
+                                } else {
+                                    if let prevSubPath = prevSubPath {
+                                        subPath.startName = prevSubPath.endName
+                                        subPath.startX = prevSubPath.endX
+                                        subPath.startY = prevSubPath.endY
+                                    }
+                                    
+                                    if i >= subPaths.count - 1 {
+                                        subPath.endName = params.endName
+                                        subPath.endX = params.EX
+                                        subPath.endY = params.EY
+                                    } else {
+                                        if let nexSubPath = nexSubPath {
+                                            subPath.endName = nexSubPath.startName
+                                            subPath.endX = nexSubPath.startX
+                                            subPath.endY = nexSubPath.startY
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            i += 1
+                        }
+                    }
+                }
             }
         }
     }
@@ -168,7 +224,7 @@ public class ODSayApiModel {
                     subPathExcludesWalk = []
                     
                     for dict in rawSubPath {
-                        var subPathItem: SubPath? = SubPath.create(dict)
+                        var subPathItem: SubPath? = SubPath.Factory.create(dict)
                         
                         if let subPathItem = subPathItem {
                             subPath!.append(subPathItem)
@@ -213,31 +269,49 @@ public class ODSayApiModel {
         public var distance: Int = 0
         public var trafficType: Int = 0
         public var sectionTime: Int = 0
+        public var endX: Double = 0.0
+        public var endY: Double = 0.0
+        public var startX: Double = 0.0
+        public var startY: Double = 0.0
+        public var endName: String?
+        public var startName: String?
         
-        public class func create(source: AnyObject) -> SubPath? {
-            let trafficType = source["trafficType"] as? Int
-            if trafficType == ODSayApiModel.TrafficType.Bus.rawValue {
-                return SubPath.Bus(object: source)
+        override public func format(value: AnyObject!, forKey key: String!) -> AnyObject! {
+            if value is String {
+                return (value as! String).decode
             }
-            if trafficType == ODSayApiModel.TrafficType.Subway.rawValue {
-                return SubPath.Subway(object: source)
+            
+            return super.format(value, forKey: key)
+        }
+        
+        override public func unformat(value: AnyObject!, forKey key: String!) -> AnyObject! {
+            if value is String {
+                return (value as! String).encode
             }
-            if trafficType == ODSayApiModel.TrafficType.Walk.rawValue {
-                return SubPath.Walk(object: source)
+            
+            return super.unformat(value, forKey: key)
+        }
+        
+        public class Factory {
+            public class func create(source: AnyObject) -> SubPath? {
+                let trafficType = source["trafficType"] as? Int
+                if trafficType == ODSayApiModel.TrafficType.Bus.rawValue {
+                    return SubPath.Bus(object: source)
+                }
+                if trafficType == ODSayApiModel.TrafficType.Subway.rawValue {
+                    return SubPath.Subway(object: source)
+                }
+                if trafficType == ODSayApiModel.TrafficType.Walk.rawValue {
+                    return SubPath.Walk(object: source)
+                }
+                return nil
             }
-            return nil
         }
         
         public class Transport: SubPath {
             public var endID: Int = 0
             public var stationCount: Int = 0
             public var startID: Int = 0
-            public var endX: Double = 0.0
-            public var endY: Double = 0.0
-            public var startX: Double = 0.0
-            public var startY: Double = 0.0
-            public var endName: String?
-            public var startName: String?
             public private(set) var lane: [Lane]?
             public private(set) var passStopList: PassStopList?
             
@@ -247,22 +321,6 @@ public class ODSayApiModel {
                 if let object = object {
                     passStopList = self.childWithKey("passStopList", classType: PassStopList.self) as? PassStopList
                 }
-            }
-            
-            override public func format(value: AnyObject!, forKey key: String!) -> AnyObject! {
-                if value is String {
-                    return (value as! String).decode
-                }
-                
-                return super.format(value, forKey: key)
-            }
-            
-            override public func unformat(value: AnyObject!, forKey key: String!) -> AnyObject! {
-                if value is String {
-                    return (value as! String).encode
-                }
-                
-                return super.unformat(value, forKey: key)
             }
         }
         
@@ -309,6 +367,22 @@ public class ODSayApiModel {
             public var subwayCityCode: Int = 0
             public var subwayCode: Int = 0
             public var name: String?
+            
+            override public func format(value: AnyObject!, forKey key: String!) -> AnyObject! {
+                if value is String {
+                    return (value as! String).decode
+                }
+                
+                return super.format(value, forKey: key)
+            }
+            
+            override public func unformat(value: AnyObject!, forKey key: String!) -> AnyObject! {
+                if value is String {
+                    return (value as! String).encode
+                }
+                
+                return super.unformat(value, forKey: key)
+            }
             
             public var shortName: String? {
                 if let name = name {

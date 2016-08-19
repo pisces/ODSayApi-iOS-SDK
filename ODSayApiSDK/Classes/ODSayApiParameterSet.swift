@@ -25,7 +25,9 @@ public class ODSayApiParameterSet: AbstractModel {
         public var SY: Double = 0
         public var EX: Double = 0
         public var EY: Double = 0
+        public var endName: String?
         public var radius: String?
+        public var startName: String?
         public var weightTime: String?
     }
 }
