@@ -276,20 +276,12 @@ public class ODSayApiModel {
         public var endName: String?
         public var startName: String?
         
-        override public func format(value: AnyObject!, forKey key: String!) -> AnyObject! {
-            if value is String {
-                return (value as! String).decode
-            }
-            
-            return super.format(value, forKey: key)
+        override init!(object: AnyObject!) {
+            super.init(object: object, encode: true)
         }
         
-        override public func unformat(value: AnyObject!, forKey key: String!) -> AnyObject! {
-            if value is String {
-                return (value as! String).encode
-            }
-            
-            return super.unformat(value, forKey: key)
+        required public init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
         }
         
         public class Factory {
@@ -361,28 +353,20 @@ public class ODSayApiModel {
             public var busID: Int = 0
             public var busNo: Int = 0
             public var type: Int = 0
+            
+            override init!(object: AnyObject!) {
+                super.init(object: object, encode: true)
+            }
+            
+            required public init?(coder aDecoder: NSCoder) {
+                super.init(coder: aDecoder)
+            }
         }
         
         public class Subway: Lane {
             public var subwayCityCode: Int = 0
             public var subwayCode: Int = 0
             public var name: String?
-            
-            override public func format(value: AnyObject!, forKey key: String!) -> AnyObject! {
-                if value is String {
-                    return (value as! String).decode
-                }
-                
-                return super.format(value, forKey: key)
-            }
-            
-            override public func unformat(value: AnyObject!, forKey key: String!) -> AnyObject! {
-                if value is String {
-                    return (value as! String).encode
-                }
-                
-                return super.unformat(value, forKey: key)
-            }
             
             public var shortName: String? {
                 if let name = name {
