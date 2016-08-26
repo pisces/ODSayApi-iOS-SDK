@@ -7,99 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01F66F2DF94EB474989760272F3E1A39 /* NSDate+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B30C660DCFA6770A81139BF08F723E /* NSDate+PSFoundation.m */; };
-		04F771CC044ED7B995F1168CEBFCC9A0 /* AbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C21B4B8D970B9896C3EBDDD439AF0F7 /* AbstractModel.m */; };
-		05393B58BE2D798477B3BCE24270AB80 /* w3action-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B1F5F73073B5FDB43E02EB94EE13E5 /* w3action-dummy.m */; };
-		067127B682CC1AE8B5D2CA6B188080D3 /* NSDate+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F57F05D6370D00D3272306409B1E10C /* NSDate+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B83C30CD45590B53328FEC9E75CABEE /* NSString+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D05B9773E09F95FB063615FB7852E57 /* NSString+PSFoundation.m */; };
-		0BE432431AF502BBF9A3CFB5412984EE /* NSArray+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC734DF3525F111B8CBC770BAB4326D /* NSArray+PSFoundation.m */; };
+		01ACF939E9A7F2B9E4476C0579C800D7 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 159E0F301B1719A8EDF46637E0694354 /* zh-Hant.lproj */; };
+		0805B50EB426A5930CFA993722940D3D /* NSURLRequest+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE520432E92109B7717EFFCECE01686A /* NSURLRequest+PSFoundation.m */; };
+		0C720DDEC0A40012ECC35EFF16AFAA68 /* w3action-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B1F5F73073B5FDB43E02EB94EE13E5 /* w3action-dummy.m */; };
+		0CD9B37EC19F3A695599BA9CA96C064D /* NSObject+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F79F4D731DD18DC0D59D4A951D68EB /* NSObject+PSFoundation.m */; };
 		0D7E0DEB0BD4F0A6BE280B210F7A7F5A /* apxml-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5F9521C6FFDA431899135ED6CAEE74 /* apxml-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12145C7BFB439523D0EB7384B11C6D65 /* NSArray+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 59CE4D58D9D8A75D0ADF2517FC409097 /* NSArray+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13CA9B634E9A55AB87C81FF422369F24 /* NSDictionary+w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = C77180FA4979E7DE252316ED377B1A22 /* NSDictionary+w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1860A112584C444397A735491EAF01EE /* HTTPRequestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF33A3C326D6CA71159051BEC36AA02 /* HTTPRequestObject.m */; };
+		105352A7751CDB1393CA9426ECF0B8D3 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5D38DE7C00838FB75C2B7CF8C6275F33 /* ko.lproj */; };
+		10C58E4B76EB64FEA8EA487F92CCEE86 /* BaseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 385DC8FEE71BF41DDC4F62A8F1A84B1C /* BaseObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13C11E46CB490EFC726DF09DCFA7ABFB /* NSDate+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F84A6616B0A1249E5B6F3EB162F6E /* NSDate+PSFoundation.m */; };
+		16B3E37BDD9C496C92A0753551F01C75 /* ODSayApiResultCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632E9984014829387998DE62F0B2096 /* ODSayApiResultCode.swift */; };
 		1AF35BD00057049AF1B3593A178BE18F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
 		210FA2AF5485849CA44795C0F8985EB5 /* APElement.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2D8277291AE221F3F3D944C8EB0BBF /* APElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		295EA071FCD0597F5FC9E2D6F49B0E48 /* NSObject+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = C467A4A9EA09553785D1734C8C007354 /* NSObject+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D03C043C2C6E3A189C50B1D458F83E2 /* NSData+w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD599E0C5D5F42EEA1AA6F6001D36BB /* NSData+w3action.m */; };
-		2E84E0BEAE1DD4A4388B017C69B6021B /* DataLoadValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1153721BE3EFD3B51151FDAB5DCB132E /* DataLoadValidator.m */; };
-		31DBA7A13EF5AB019A1695A5EB5B2ABF /* DataLoadValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = E72F9E8704603DC7FF0573A85E83C416 /* DataLoadValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		335DBDA33FF7314C278624A7FFC8832F /* ODSayApiSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5B226324F00ADD9EDE22C62A18AC5F /* ODSayApiSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		228E912A56BACBBB5D3A85A5CB65ED97 /* PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BE945086C9725A3FF7F380E87779CED9 /* PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22DD1DA24E4036065A7A4672E6A78F1D /* ODSayApiResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1D2A3EB1A27220F468F03DF19AA932 /* ODSayApiResultModel.swift */; };
+		250F0907C4EBCF0E5E5504E20F1DFFEF /* HTTPRequestObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A05F9363355AEBDD3C03D333B913B3 /* HTTPRequestObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2998F50F1A7578F86C566A641B91F960 /* w3action.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8C78FA67FAC8F3F65C3CD28CFA20B /* w3action.framework */; };
+		2A0EBB1EC4FA2863C5E13C15F1A41AD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
+		2CA88CEA4205BF2F0F58DE060C09A8D0 /* NSData+w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD599E0C5D5F42EEA1AA6F6001D36BB /* NSData+w3action.m */; };
+		2CC8B34B7B387A10A7A9ABBDAAB79FC8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C061EACBF6CB3DA6252D212F88ADAC /* CFNetwork.framework */; };
+		2D0B4B3484AACB8BFE53AE65338A74AD /* DataLoadValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 297D88BD5AC666894F14DAC59E1151BD /* DataLoadValidator.m */; };
+		2D3794C681A7DA4425D26237CE67F879 /* HTTPRequestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF33A3C326D6CA71159051BEC36AA02 /* HTTPRequestObject.m */; };
+		2D8EDDC396C2E813308E0DD60AB5C911 /* NSArray+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 098AD6BE2215AFA0FD145F4956D65168 /* NSArray+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30C73CAD5EBD86EBF8086134B599AD48 /* NSDictionary+w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = C77180FA4979E7DE252316ED377B1A22 /* NSDictionary+w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3370597A0FF278A612D8A7AEBE5A1ABB /* ODSayApiAppCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B730A39168B53A4E30AE085CECF45 /* ODSayApiAppCenter.swift */; };
 		358AB803B4FFFF9692136ED226455FB6 /* APAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = F20EADAC9927B7C6E78B57C809250A2B /* APAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38A8641BC24C2212FA54AD0DBD21E29E /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 28DB0BE0EF7B7EA0AE135681EF592FC4 /* en.lproj */; };
-		497FCA4B2698186464A0934C39F42F9D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C061EACBF6CB3DA6252D212F88ADAC /* CFNetwork.framework */; };
-		4A224DF52F4D51E9DA954551B4043284 /* NSString+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EFB21851541D142C3D2ECC3BF91611 /* NSString+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B6ED973C0E685C5291E64BA58964F7A /* PSFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF02D3EE84374FBB7E6F30E7438B26E2 /* PSFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FC8DB44D0C94337CC40E28E46BEF12E /* NSBundle+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44243A80F03D960900592628B667EB55 /* NSBundle+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		529FEE58D9CC72CB01CB084E2CB62D2F /* PSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499943D03C53BE4D0D0BA008AD6D90A0 /* PSFoundation.framework */; };
+		35FBE2A5D1F3B7A3B867598F81C1BB6A /* PSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499943D03C53BE4D0D0BA008AD6D90A0 /* PSFoundation.framework */; };
+		39E43F655916498A8FC697424A99FAF8 /* NSDate+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9DF0A2448E6A8CF64ADF72B730C20E /* NSDate+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		401B12E2A0625D5842B1B95317EE3CDA /* NSString+w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E86863BAA1384676E19C2026909555F /* NSString+w3action.m */; };
+		4348BB55AEBB678A6F4D67ED6FFD5866 /* AbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2636B5F5041713E9F3AB020DBAD7728 /* AbstractModel.m */; };
 		52B1550DF6B6C4DBC861531B3EB95EFC /* APAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EE94CDFDC2F040909769B30678D9DE /* APAttribute.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		59A7DA6642D818EE82890555C37FBF47 /* NSURLRequest+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6784509C10320CA13751A680EC2CA4 /* NSURLRequest+PSFoundation.m */; };
-		5B04C1A373E2CC86FFA584AB807EE25F /* NSString+w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E86863BAA1384676E19C2026909555F /* NSString+w3action.m */; };
-		5B7A60E7ABD5509F00E42E9766960D6D /* w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = A4997E500D15049299C1914AC30F6038 /* w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62D8C569C17C4C83AB29359F30E38A9E /* PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A225132F22ED5A09A19175177DA9B6 /* PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6405253C252CB42977EDDF1BF97E6DAD /* NSFileManager+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = B9AEAD4E6A253E8AC709198349E49A8A /* NSFileManager+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66E22A7A109F8ACF1554909134836FA3 /* NSURLRequest+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 593C709C482E9F952AB9359564489625 /* NSURLRequest+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BB7CE3E9E52C8416D547E17C2901E75 /* HTTPActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB46A6D8D8AA99DCAB9DE4E25B5BEF82 /* HTTPActionManager.m */; };
-		6F42F0E97837D912223A70B87CCD1D02 /* w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A07D54CEF0B7CC0A55EDC78B7FE808A /* w3action.m */; };
+		5F111C371F094D1A51489C69EC00F976 /* NSArray+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BDEC5658EC2844D9B0E927ED1DFA15 /* NSArray+PSFoundation.m */; };
+		5F6F5A59073217A253D8F6E4496406DE /* NSURL+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E29E7871D21CAAA350D3123A2A5B8E /* NSURL+PSFoundation.m */; };
+		6278F55EAC9494ACFF4E0C0B6950D5B5 /* NSString+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7252C9F4A0ADFFA8128CF738313794AA /* NSString+PSFoundation.m */; };
+		6437F118D349C9049B3305D89FE1BAF4 /* PSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499943D03C53BE4D0D0BA008AD6D90A0 /* PSFoundation.framework */; };
+		66A99CF1085843BE2D17FD4AC596D899 /* HTTPActionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EF82006872056A43ABAC0DB253507F28 /* HTTPActionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69F7A875C68114FC56753401B041BEEB /* AbstractModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B4CE0CC7E529CCC9F193C30EBA9BBB /* AbstractModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A7B2614AEAC920B767098F98CE93615 /* NSData+w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = 8432D89400264C283F174B93F7F39E2F /* NSData+w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B418BF5DA70F56A8A2F5C5CA5D5FAB1 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 671B85F55CC39E163625454983EFE03A /* zh-Hans.lproj */; };
+		6D11EC1D0B7ACD35BBAA7EB8A757202E /* NSObject+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 045F2A28B5708175C5C30A06AE256FE5 /* NSObject+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD574EF230816DD41B852AEAE7B5519 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C437D683FFCB0A021CA7EBC24742EBCE /* en.lproj */; };
 		70CC90098F2256E910321E20919A9221 /* APDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C213406D4E8B00527C9903319F9299 /* APDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72705C4494E93636E268D8820F4D8419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
+		718766E8462CC083C35ABCACC78A4D38 /* ODSayApiParameterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D5D7FD59F32F5B3428163572D26CEC /* ODSayApiParameterSet.swift */; };
+		739FD1FBDD458B0840986636FD6CBA29 /* w3action-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E90B942D0AFAEFFE7E428EFA377285 /* w3action-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75864DD2D368B5DB55D2C47603F03F66 /* w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = A4997E500D15049299C1914AC30F6038 /* w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76CCF2D1B4A8432DACF7DD30D3B2E8B3 /* Pods-ODSayApiSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7EC79B7EC14E4C177F07C668A316F3 /* Pods-ODSayApiSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DEB571C7CB48A264E862AB71AB246AB /* AbstractModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E721F84EC0091EC4FED4F5B337531C /* AbstractModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81547CD612DFD5012B7A826C85D7E5F7 /* NSDictionary+w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029536BCC2DB7D76C0F69E8113FAC4 /* NSDictionary+w3action.m */; };
+		79D81AF7768B2D756F1C8D9A1A42DD26 /* HTTPActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB46A6D8D8AA99DCAB9DE4E25B5BEF82 /* HTTPActionManager.m */; };
+		8034E652150D668CAE9B64EBA94D48CC /* AbstractJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B221A5D170740F0AB5BF7883CF7CF5 /* AbstractJSONModel.m */; };
+		825A20287D83489D8BEBA4E30BCCF1B4 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63290A9F8D9EBE8E539FC63855768E69 /* BaseObject.m */; };
+		82D5BB7846A6401493BBE29B428F82AE /* w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A07D54CEF0B7CC0A55EDC78B7FE808A /* w3action.m */; };
 		83783E013576C8C8E981A04F9296BF55 /* apxml-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B1DFD864B3960B7F91E61704B47C1D /* apxml-dummy.m */; };
-		84D3896585E8F48C3211B9ACC246F7AB /* BaseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D711141E30A83DE00DAA8D44D1E8DF /* BaseObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		842DB17DE68FA48181BD4B96F1FF241B /* NSBundle+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A0D173A1B123523428286A51132ACC /* NSBundle+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8683C6DB27FFE976D62CA3D42A7284B9 /* NSString+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8443D44FECE75DCED4598C3DC480762D /* NSString+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A3F743AB09CB77478E84DE86E469794 /* NSURL+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF8CD8234E70747A36C0FA15C1E7EF4 /* NSURL+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AC328A1BF9CF11F286A5E0ABB29A2A8 /* PSFoundation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCC7E03AA9D02E7D8D4B66EE9283120A /* PSFoundation.bundle */; };
 		8C8DAAB9D5F0B49CDD50073E3187951B /* Pods-ODSayApiSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A398A55DF94423379243B73EE1331266 /* Pods-ODSayApiSDK_Example-dummy.m */; };
-		8ED180896ACD46588F5DA6D90420F6B0 /* apxml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC2B4133DD38C0C1EA3B2AED0EF1473 /* apxml.framework */; };
-		90EB2FB2077E13690BCDA3276EE2F76E /* apxml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC2B4133DD38C0C1EA3B2AED0EF1473 /* apxml.framework */; };
+		94AF05D4B46CA6D333245B7189EDFF83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
 		9512E0F222951B003C960CCEDB6D8CC9 /* Pods-ODSayApiSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC3D11DF9C198B108F0F9E832312C7A /* Pods-ODSayApiSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		999E3573E46DC8B5970B67D285ACA613 /* ext.h in Headers */ = {isa = PBXBuildFile; fileRef = C04CBBE2DDCC5036E55C5DE6CFFA3725 /* ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B9E6724FDDE65812530E3015BF0F48F /* PSFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3548415F519C0F000E074D41B573B77C /* PSFoundation-dummy.m */; };
+		9BD9F0A47A3883873E7D9D6002FF8F05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
 		9C3E41958ED836453F18FE31371B66E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
-		9EE821031658FC9CF5B976CF67CAFE24 /* w3action.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8C78FA67FAC8F3F65C3CD28CFA20B /* w3action.framework */; };
-		9F493C13F97A0DAB087499477F898769 /* NSBundle+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF3CA8FD4F35A553C4BD7D33A6B936C /* NSBundle+PSFoundation.m */; };
+		9D27D4116887991FDA95A1960A124E9B /* NSURLRequest+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DA83BA9C0DD55F228FBAD445ECE6EA /* NSURLRequest+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1068E403C2E1729BAD1F3CEB90DF733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
-		A3FDDBFF43F1F5A6BE2094D9EE40B577 /* ODSayApiSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A52752E307FDEA6DD7C2B1EE6865396 /* ODSayApiSDK-dummy.m */; };
-		A404E0F13E2903D56E12207512B071B2 /* model.h in Headers */ = {isa = PBXBuildFile; fileRef = 08DF62EF60221A064D198B6C300930AC /* model.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB6905AA9889A95C9EDFA7E6C1157F29 /* NSString+w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B29933743AFB6E8299FE38CBB8C02E7 /* NSString+w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE0E272E0B48D081EEBF822A2F9A4515 /* NSFileManager+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 593E43F680C7C1DB1A1A036BC5CABB3D /* NSFileManager+PSFoundation.m */; };
-		B656E218A0E0D647952C5C3346D07B46 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E043B63AF8A83ED83124563C094491EC /* ko.lproj */; };
+		A3C216475734FC7EB24F01DC60845852 /* NSFileManager+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F150C349BCA9D008341D16E66A2B505 /* NSFileManager+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92EAA181CDBC9A4C1D1B1C68B5A9F6A /* PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766530F76EE96760F105D0176E1561D6 /* PSFoundation.m */; };
+		B0FA184A3601EE4EBB373E60EE0FBBCE /* model.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B06135CD306EA4BFDA29C456A06D50D /* model.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8594A206A3F912D6713139D96E7CE46 /* APXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A23A39EF0C96B27E7A245458256ED3 /* APXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAC07DE9A1FB31049F87D43F0D353D44 /* NSURL+PSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F98585D8C935F2D7060944E137F17DFD /* NSURL+PSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBB9BC32409E493A9C62DEE39D48EC7F /* Pods-ODSayApiSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CDD3B223E0ED321B9FC22DF1B019A4 /* Pods-ODSayApiSDK_Tests-dummy.m */; };
-		BF475FEFD4EFFBA4FFEF107B0F96B318 /* PSFoundation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCC7E03AA9D02E7D8D4B66EE9283120A /* PSFoundation.bundle */; };
-		C2735CF840CF5D728C00DF116CAE21C0 /* NSURL+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A656EF395E8F91F23CCEAEFF17B80 /* NSURL+PSFoundation.m */; };
-		CD0C0B01024F17D88E7208B203DBE571 /* PSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499943D03C53BE4D0D0BA008AD6D90A0 /* PSFoundation.framework */; };
-		CFD709F8DB2A286048B1758EA66133C6 /* NSData+w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = 8432D89400264C283F174B93F7F39E2F /* NSData+w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1AFD592CA7CB5D79D6D38935743BAAB /* w3action-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E90B942D0AFAEFFE7E428EFA377285 /* w3action-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2EDEB0DEB7D2E73CD6312D976BB3DAB /* ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 91DC109A5C8234B381236045B3AB8A95 /* ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4276CC9FD9AD44D53C49A1F9372116F /* AbstractJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E74112FD7CEB8A0ED3DB296158DEA375 /* AbstractJSONModel.m */; };
-		D85E9C8D3648CE50ACD3BC5D3BC0C10C /* AbstractJSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E6940816D74F9B8C28196E466EBE04E6 /* AbstractJSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAE3C5A3C164E6CB7E9C09725AD449A8 /* HTTPRequestObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A05F9363355AEBDD3C03D333B913B3 /* HTTPRequestObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCA237A61D3F67DA00B56EF3 /* ODSayApiParameterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA237A41D3F67B100B56EF3 /* ODSayApiParameterSet.swift */; };
-		DCA237A81D3F693000B56EF3 /* ODSayApiResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA237A71D3F693000B56EF3 /* ODSayApiResultModel.swift */; };
-		DCA237AA1D3F7CCD00B56EF3 /* ODSayApiResultCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA237A91D3F7CCD00B56EF3 /* ODSayApiResultCode.swift */; };
-		DFA75E6A92D3165BEE210A6DEDC77998 /* HTTPActionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EF82006872056A43ABAC0DB253507F28 /* HTTPActionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFAADA74A58D293CB3B857D5856E35C2 /* PSFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B2FC3159FCAE7C36F0A3CDCF4C663D /* PSFoundation-dummy.m */; };
-		E038E299C90E7DAB415569BFAAC0974E /* PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD023B4EC32FBFCF6C30D3FAE071401 /* PSFoundation.m */; };
-		E0A4C855349529AEBA459CB3A0497A14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
-		E66D32F040A7A23DF4B685363162DB74 /* ODSayApiAppCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25663CD094B598E0777981721C85CD5F /* ODSayApiAppCenter.swift */; };
-		EF1E67C231AC1D0B402E0C64BB0C7326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */; };
+		C07F6F1855870D698234088181E696A9 /* NSString+w3action.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B29933743AFB6E8299FE38CBB8C02E7 /* NSString+w3action.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53124BB4062CFE2900136443C05FB66 /* NSFileManager+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3754B0955E328D1FE3E02FE3814048 /* NSFileManager+PSFoundation.m */; };
+		C5BD4225641FF55C27E3BCB884122C8A /* ODSayApiSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5B226324F00ADD9EDE22C62A18AC5F /* ODSayApiSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D397094FD72A05946D51DA1A6D4DEA1F /* apxml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC2B4133DD38C0C1EA3B2AED0EF1473 /* apxml.framework */; };
+		DD7DBB2F9203534D222E1B8C8538A8BA /* apxml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC2B4133DD38C0C1EA3B2AED0EF1473 /* apxml.framework */; };
+		ECC828C96403F7F817BD8898993133EF /* AbstractJSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3CD4650EDD0FC0948C28E38A5070F6 /* AbstractJSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECFC2A9AF193887701331D5109F5D9EC /* ODSayApiSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A52752E307FDEA6DD7C2B1EE6865396 /* ODSayApiSDK-dummy.m */; };
+		EE10A9657FE6150C899EEF5DF688ABE3 /* NSBundle+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6F0AC882796C61D0CCE72FCBDBA1F2 /* NSBundle+PSFoundation.m */; };
+		F392808BE34900F8A4E1934D17249C5B /* DataLoadValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A556D93CF2383BFBFA21826943C7FE5 /* DataLoadValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F79CB239C4686BC4AB8D8050972C61EA /* APDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9723FCDAA2A75D7ACDA2F9A9CCAC8E69 /* APDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F850DB2C695046BC46774C0DB4628F95 /* PSFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFAE808E8E74B46D10DA35A87210445C /* PSFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA28C80D82680975C877B3BAEE2C3982 /* APElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F87BAE2FF2A4CAB91D415A5AAD3142 /* APElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FC8D18B38E8CD68246F7C19B08EAA9A3 /* NSObject+PSFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9DE700C3E3E47E93EDBF508619AEA0 /* NSObject+PSFoundation.m */; };
-		FFB0C69F6C532447440969E2FD854DF1 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C890F3CB3E28E53350F72C44A5C9948 /* BaseObject.m */; };
+		FAFB780B037A7BEF52A403D8170FD478 /* NSDictionary+w3action.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029536BCC2DB7D76C0F69E8113FAC4 /* NSDictionary+w3action.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		192E5E75B320AC3D70ECA6B7D2D30985 /* PBXContainerItemProxy */ = {
+		06DA3443773AA0C62C70598224CED391 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED;
 			remoteInfo = apxml;
 		};
-		29F7DBF5ABE65F7AFAA390230D6A6494 /* PBXContainerItemProxy */ = {
+		0EB425C8255C7048571440A9052CDCD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 132AB67B5CFDD67DF8394E788F93817D;
+			remoteGlobalIDString = 6D8E0269ADA7AA6D2893592D6DF4C0AE;
 			remoteInfo = PSFoundation;
 		};
 		4BA0BA9219172CA3AC4E0EAEDA1EA91D /* PBXContainerItemProxy */ = {
@@ -109,176 +111,190 @@
 			remoteGlobalIDString = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED;
 			remoteInfo = apxml;
 		};
-		58BE35880245E7F0271C7F4EBD935F5E /* PBXContainerItemProxy */ = {
+		54557FC4A29B16D0F96A8F671E5E7FB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED;
-			remoteInfo = apxml;
-		};
-		621CA44490DBFC66172E7163D8AD46CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 132AB67B5CFDD67DF8394E788F93817D;
-			remoteInfo = PSFoundation;
+			remoteGlobalIDString = 7B3E9A7F43E5C7671BE3CF958E1A0F2C;
+			remoteInfo = "PSFoundation-PSFoundation";
 		};
 		708960F36A8A33DABD5962CAC26B524D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F2C70D00310CD5905299A984F3781DC;
-			remoteInfo = w3action;
-		};
-		7A96F8E9E7FAC8A8590CA1915955A91B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48C31DDC4C805A46F712BA4E1FE35107;
-			remoteInfo = "PSFoundation-PSFoundation";
-		};
-		83FC403DA380009F5D1083FF3C21A87B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F2C70D00310CD5905299A984F3781DC;
+			remoteGlobalIDString = 6C8E98B1204C3A12137878EC3AFCDB04;
 			remoteInfo = w3action;
 		};
 		90AD8EDDF1367BE817E419AD301C76A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 132AB67B5CFDD67DF8394E788F93817D;
+			remoteGlobalIDString = 6D8E0269ADA7AA6D2893592D6DF4C0AE;
 			remoteInfo = PSFoundation;
+		};
+		B46E350ECA677DA8037F5110562AF7D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C8E98B1204C3A12137878EC3AFCDB04;
+			remoteInfo = w3action;
 		};
 		B6D4943C7A70A5BE90DCE930D271B63E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E7EEC133B7D4BB06A0B4D431B4CA7CEA;
+			remoteGlobalIDString = E1224F5D915087415767C974759F3D19;
 			remoteInfo = ODSayApiSDK;
+		};
+		D4E1C896D416FE12EC2AEBC8D60985C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED;
+			remoteInfo = apxml;
+		};
+		FE633D350E66E387C0115381AA31BE03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8E0269ADA7AA6D2893592D6DF4C0AE;
+			remoteInfo = PSFoundation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07F549652245FDE53B8CC436CD44C533 /* PSFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSFoundation.xcconfig; sourceTree = "<group>"; };
-		08DF62EF60221A064D198B6C300930AC /* model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = model.h; path = PSFoundation/Classes/model.h; sourceTree = "<group>"; };
+		00B221A5D170740F0AB5BF7883CF7CF5 /* AbstractJSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractJSONModel.m; path = PSFoundation/Classes/AbstractJSONModel.m; sourceTree = "<group>"; };
+		015F84A6616B0A1249E5B6F3EB162F6E /* NSDate+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+PSFoundation.m"; path = "PSFoundation/Classes/NSDate+PSFoundation.m"; sourceTree = "<group>"; };
+		045F2A28B5708175C5C30A06AE256FE5 /* NSObject+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+PSFoundation.h"; path = "PSFoundation/Classes/NSObject+PSFoundation.h"; sourceTree = "<group>"; };
+		098AD6BE2215AFA0FD145F4956D65168 /* NSArray+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PSFoundation.h"; path = "PSFoundation/Classes/NSArray+PSFoundation.h"; sourceTree = "<group>"; };
 		099A00AC4E9DE0FEB603C54E71BA6A79 /* Pods-ODSayApiSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODSayApiSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0AC734DF3525F111B8CBC770BAB4326D /* NSArray+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PSFoundation.m"; path = "PSFoundation/Classes/NSArray+PSFoundation.m"; sourceTree = "<group>"; };
 		0B29933743AFB6E8299FE38CBB8C02E7 /* NSString+w3action.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+w3action.h"; path = "w3action/Classes/NSString+w3action.h"; sourceTree = "<group>"; };
-		1153721BE3EFD3B51151FDAB5DCB132E /* DataLoadValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DataLoadValidator.m; path = PSFoundation/Classes/DataLoadValidator.m; sourceTree = "<group>"; };
+		11A0D173A1B123523428286A51132ACC /* NSBundle+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+PSFoundation.h"; path = "PSFoundation/Classes/NSBundle+PSFoundation.h"; sourceTree = "<group>"; };
 		1538F05584FA47DCAC771D8DAD3B7D8D /* ODSayApiSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODSayApiSDK.xcconfig; sourceTree = "<group>"; };
+		159E0F301B1719A8EDF46637E0694354 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "PSFoundation/Assets/zh-Hant.lproj"; sourceTree = "<group>"; };
 		191D6B1D738F17866785244282C277DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A556D93CF2383BFBFA21826943C7FE5 /* DataLoadValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataLoadValidator.h; path = PSFoundation/Classes/DataLoadValidator.h; sourceTree = "<group>"; };
 		1AD28693F3BAAF80A6FF3AC70CD22E09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2557079A9730461B51AF9D2E331F2543 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25663CD094B598E0777981721C85CD5F /* ODSayApiAppCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ODSayApiAppCenter.swift; sourceTree = "<group>"; };
+		1F150C349BCA9D008341D16E66A2B505 /* NSFileManager+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+PSFoundation.h"; path = "PSFoundation/Classes/NSFileManager+PSFoundation.h"; sourceTree = "<group>"; };
 		26B211E283D51274EF62DFAB71B74156 /* Pods-ODSayApiSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ODSayApiSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		28DB0BE0EF7B7EA0AE135681EF592FC4 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = PSFoundation/Assets/en.lproj; sourceTree = "<group>"; };
+		297D88BD5AC666894F14DAC59E1151BD /* DataLoadValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DataLoadValidator.m; path = PSFoundation/Classes/DataLoadValidator.m; sourceTree = "<group>"; };
 		29DA7422C17DE2ED86A4A5C2A63C9692 /* ODSayApiSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ODSayApiSDK.modulemap; sourceTree = "<group>"; };
+		2B06135CD306EA4BFDA29C456A06D50D /* model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = model.h; path = PSFoundation/Classes/model.h; sourceTree = "<group>"; };
 		2DD599E0C5D5F42EEA1AA6F6001D36BB /* NSData+w3action.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+w3action.m"; path = "w3action/Classes/NSData+w3action.m"; sourceTree = "<group>"; };
 		30029536BCC2DB7D76C0F69E8113FAC4 /* NSDictionary+w3action.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+w3action.m"; path = "w3action/Classes/NSDictionary+w3action.m"; sourceTree = "<group>"; };
+		30B4CE0CC7E529CCC9F193C30EBA9BBB /* AbstractModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractModel.h; path = PSFoundation/Classes/AbstractModel.h; sourceTree = "<group>"; };
 		317C0FCDCF8C3015391D32A6F14C898B /* Pods-ODSayApiSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODSayApiSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		387502D3973793CF9AFB1F4FF9309D29 /* ResourceBundle-PSFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PSFoundation-Info.plist"; sourceTree = "<group>"; };
+		3548415F519C0F000E074D41B573B77C /* PSFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PSFoundation-dummy.m"; sourceTree = "<group>"; };
+		385DC8FEE71BF41DDC4F62A8F1A84B1C /* BaseObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseObject.h; path = PSFoundation/Classes/BaseObject.h; sourceTree = "<group>"; };
 		3A07D54CEF0B7CC0A55EDC78B7FE808A /* w3action.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = w3action.m; path = w3action/Classes/w3action.m; sourceTree = "<group>"; };
 		3A52752E307FDEA6DD7C2B1EE6865396 /* ODSayApiSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ODSayApiSDK-dummy.m"; sourceTree = "<group>"; };
 		3BD19F7578EC376A111DDE029D140F41 /* Pods-ODSayApiSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ODSayApiSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		3F7EC79B7EC14E4C177F07C668A316F3 /* Pods-ODSayApiSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ODSayApiSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		41B1F5F73073B5FDB43E02EB94EE13E5 /* w3action-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "w3action-dummy.m"; sourceTree = "<group>"; };
-		44243A80F03D960900592628B667EB55 /* NSBundle+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+PSFoundation.h"; path = "PSFoundation/Classes/NSBundle+PSFoundation.h"; sourceTree = "<group>"; };
 		47EE94CDFDC2F040909769B30678D9DE /* APAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = APAttribute.m; sourceTree = "<group>"; };
 		499943D03C53BE4D0D0BA008AD6D90A0 /* PSFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A6784509C10320CA13751A680EC2CA4 /* NSURLRequest+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+PSFoundation.m"; path = "PSFoundation/Classes/NSURLRequest+PSFoundation.m"; sourceTree = "<group>"; };
 		4CF33A3C326D6CA71159051BEC36AA02 /* HTTPRequestObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPRequestObject.m; path = w3action/Classes/HTTPRequestObject.m; sourceTree = "<group>"; };
 		4E5F9521C6FFDA431899135ED6CAEE74 /* apxml-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "apxml-umbrella.h"; sourceTree = "<group>"; };
 		4E86863BAA1384676E19C2026909555F /* NSString+w3action.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+w3action.m"; path = "w3action/Classes/NSString+w3action.m"; sourceTree = "<group>"; };
 		4FC041F2E06229F8C1AC4E009CAE8F36 /* Pods-ODSayApiSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ODSayApiSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		593C709C482E9F952AB9359564489625 /* NSURLRequest+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+PSFoundation.h"; path = "PSFoundation/Classes/NSURLRequest+PSFoundation.h"; sourceTree = "<group>"; };
-		593E43F680C7C1DB1A1A036BC5CABB3D /* NSFileManager+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+PSFoundation.m"; path = "PSFoundation/Classes/NSFileManager+PSFoundation.m"; sourceTree = "<group>"; };
-		59CE4D58D9D8A75D0ADF2517FC409097 /* NSArray+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PSFoundation.h"; path = "PSFoundation/Classes/NSArray+PSFoundation.h"; sourceTree = "<group>"; };
+		51E29E7871D21CAAA350D3123A2A5B8E /* NSURL+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+PSFoundation.m"; path = "PSFoundation/Classes/NSURL+PSFoundation.m"; sourceTree = "<group>"; };
+		5632E9984014829387998DE62F0B2096 /* ODSayApiResultCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ODSayApiResultCode.swift; sourceTree = "<group>"; };
+		582EDAC3C2B649D3C3F338D5DA2B8607 /* PSFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PSFoundation.modulemap; sourceTree = "<group>"; };
 		5A6742C878AA48694682B45D75AA38D8 /* Pods-ODSayApiSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODSayApiSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5C2B56C5CF44670A13507431ABCA0EC2 /* apxml-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "apxml-prefix.pch"; sourceTree = "<group>"; };
-		5D05B9773E09F95FB063615FB7852E57 /* NSString+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PSFoundation.m"; path = "PSFoundation/Classes/NSString+PSFoundation.m"; sourceTree = "<group>"; };
+		5D38DE7C00838FB75C2B7CF8C6275F33 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = PSFoundation/Assets/ko.lproj; sourceTree = "<group>"; };
 		5E5B226324F00ADD9EDE22C62A18AC5F /* ODSayApiSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODSayApiSDK-umbrella.h"; sourceTree = "<group>"; };
-		5F57F05D6370D00D3272306409B1E10C /* NSDate+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+PSFoundation.h"; path = "PSFoundation/Classes/NSDate+PSFoundation.h"; sourceTree = "<group>"; };
 		5F672F56A33E110160306BA7B30EA47C /* Pods-ODSayApiSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ODSayApiSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FF8CD8234E70747A36C0FA15C1E7EF4 /* NSURL+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+PSFoundation.h"; path = "PSFoundation/Classes/NSURL+PSFoundation.h"; sourceTree = "<group>"; };
 		61F87BAE2FF2A4CAB91D415A5AAD3142 /* APElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = APElement.m; sourceTree = "<group>"; };
+		63290A9F8D9EBE8E539FC63855768E69 /* BaseObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseObject.m; path = PSFoundation/Classes/BaseObject.m; sourceTree = "<group>"; };
 		63B6E914870AB7412EEEA67E42AF717B /* Pods-ODSayApiSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODSayApiSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		671B85F55CC39E163625454983EFE03A /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "PSFoundation/Assets/zh-Hans.lproj"; sourceTree = "<group>"; };
 		6804D10AE8D806B1C86901A17D8B522B /* Pods-ODSayApiSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODSayApiSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6CC3D11DF9C198B108F0F9E832312C7A /* Pods-ODSayApiSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ODSayApiSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6E1A656EF395E8F91F23CCEAEFF17B80 /* NSURL+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+PSFoundation.m"; path = "PSFoundation/Classes/NSURL+PSFoundation.m"; sourceTree = "<group>"; };
+		7252C9F4A0ADFFA8128CF738313794AA /* NSString+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PSFoundation.m"; path = "PSFoundation/Classes/NSString+PSFoundation.m"; sourceTree = "<group>"; };
+		766530F76EE96760F105D0176E1561D6 /* PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSFoundation.m; path = PSFoundation/Classes/PSFoundation.m; sourceTree = "<group>"; };
 		76A23A39EF0C96B27E7A245458256ED3 /* APXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APXML.h; sourceTree = "<group>"; };
 		78CDD3B223E0ED321B9FC22DF1B019A4 /* Pods-ODSayApiSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ODSayApiSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		79C213406D4E8B00527C9903319F9299 /* APDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APDocument.h; sourceTree = "<group>"; };
-		7C21B4B8D970B9896C3EBDDD439AF0F7 /* AbstractModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractModel.m; path = PSFoundation/Classes/AbstractModel.m; sourceTree = "<group>"; };
-		7FFEC146FCFE4CDE247B84C49920D3EF /* PSFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSFoundation-prefix.pch"; sourceTree = "<group>"; };
+		7F3754B0955E328D1FE3E02FE3814048 /* NSFileManager+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+PSFoundation.m"; path = "PSFoundation/Classes/NSFileManager+PSFoundation.m"; sourceTree = "<group>"; };
+		81DA83BA9C0DD55F228FBAD445ECE6EA /* NSURLRequest+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+PSFoundation.h"; path = "PSFoundation/Classes/NSURLRequest+PSFoundation.h"; sourceTree = "<group>"; };
 		828321D2E7C18365EC282668565A3DAB /* PSFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BDEC5658EC2844D9B0E927ED1DFA15 /* NSArray+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PSFoundation.m"; path = "PSFoundation/Classes/NSArray+PSFoundation.m"; sourceTree = "<group>"; };
 		8314ED3008978BEE99304B329C4E9FBC /* Pods-ODSayApiSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ODSayApiSDK_Example.modulemap"; sourceTree = "<group>"; };
 		8432D89400264C283F174B93F7F39E2F /* NSData+w3action.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+w3action.h"; path = "w3action/Classes/NSData+w3action.h"; sourceTree = "<group>"; };
+		8443D44FECE75DCED4598C3DC480762D /* NSString+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PSFoundation.h"; path = "PSFoundation/Classes/NSString+PSFoundation.h"; sourceTree = "<group>"; };
 		84A05F9363355AEBDD3C03D333B913B3 /* HTTPRequestObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPRequestObject.h; path = w3action/Classes/HTTPRequestObject.h; sourceTree = "<group>"; };
 		85A314D4222316E726F5D464738DB5B2 /* ODSayApiSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ODSayApiSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85B2FC3159FCAE7C36F0A3CDCF4C663D /* PSFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PSFoundation-dummy.m"; sourceTree = "<group>"; };
 		87E90B942D0AFAEFFE7E428EFA377285 /* w3action-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "w3action-umbrella.h"; sourceTree = "<group>"; };
-		91DC109A5C8234B381236045B3AB8A95 /* ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ext.h; path = PSFoundation/Classes/ext.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94D711141E30A83DE00DAA8D44D1E8DF /* BaseObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseObject.h; path = PSFoundation/Classes/BaseObject.h; sourceTree = "<group>"; };
 		9723FCDAA2A75D7ACDA2F9A9CCAC8E69 /* APDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = APDocument.m; sourceTree = "<group>"; };
 		9824D0836AB93DF26FA029D344C822E1 /* w3action.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = w3action.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99DFEF61724689736C9141D386FE30C1 /* PSFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PSFoundation.modulemap; sourceTree = "<group>"; };
-		9C890F3CB3E28E53350F72C44A5C9948 /* BaseObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseObject.m; path = PSFoundation/Classes/BaseObject.m; sourceTree = "<group>"; };
 		9D020B7507B5CC403937D2740FD5B391 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18DFA987756341D8EEA5D2387023AE7 /* PSFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSFoundation-prefix.pch"; sourceTree = "<group>"; };
+		A3217EF96CFEA6245AB9D6D07B497408 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A398A55DF94423379243B73EE1331266 /* Pods-ODSayApiSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ODSayApiSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		A4997E500D15049299C1914AC30F6038 /* w3action.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = w3action.h; path = w3action/Classes/w3action.h; sourceTree = "<group>"; };
 		AC1B850C8AB7EAE78E8D86FF4C5100D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACB4D465238578D0718A781129E1A3DF /* Pods_ODSayApiSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODSayApiSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2D8277291AE221F3F3D944C8EB0BBF /* APElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APElement.h; sourceTree = "<group>"; };
-		AF9DE700C3E3E47E93EDBF508619AEA0 /* NSObject+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PSFoundation.m"; path = "PSFoundation/Classes/NSObject+PSFoundation.m"; sourceTree = "<group>"; };
+		AE6F0AC882796C61D0CCE72FCBDBA1F2 /* NSBundle+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+PSFoundation.m"; path = "PSFoundation/Classes/NSBundle+PSFoundation.m"; sourceTree = "<group>"; };
+		AFAE808E8E74B46D10DA35A87210445C /* PSFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSFoundation-umbrella.h"; sourceTree = "<group>"; };
 		B139164EFB080237248BEBA2421F9077 /* apxml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = apxml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3EFB21851541D142C3D2ECC3BF91611 /* NSString+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PSFoundation.h"; path = "PSFoundation/Classes/NSString+PSFoundation.h"; sourceTree = "<group>"; };
 		B79D32065BEF2BC700126A58AA1E8592 /* apxml.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = apxml.xcconfig; sourceTree = "<group>"; };
-		B9AEAD4E6A253E8AC709198349E49A8A /* NSFileManager+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+PSFoundation.h"; path = "PSFoundation/Classes/NSFileManager+PSFoundation.h"; sourceTree = "<group>"; };
 		BB46A6D8D8AA99DCAB9DE4E25B5BEF82 /* HTTPActionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPActionManager.m; path = w3action/Classes/HTTPActionManager.m; sourceTree = "<group>"; };
 		BCC7E03AA9D02E7D8D4B66EE9283120A /* PSFoundation.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSFoundation.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3CD4650EDD0FC0948C28E38A5070F6 /* AbstractJSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractJSONModel.h; path = PSFoundation/Classes/AbstractJSONModel.h; sourceTree = "<group>"; };
+		BE945086C9725A3FF7F380E87779CED9 /* PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSFoundation.h; path = PSFoundation/Classes/PSFoundation.h; sourceTree = "<group>"; };
 		BEC2B4133DD38C0C1EA3B2AED0EF1473 /* apxml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = apxml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF02D3EE84374FBB7E6F30E7438B26E2 /* PSFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSFoundation-umbrella.h"; sourceTree = "<group>"; };
 		BF29AC7EBEEE98B99BF1E2CACBB9ACB0 /* Pods_ODSayApiSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODSayApiSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04CBBE2DDCC5036E55C5DE6CFFA3725 /* ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ext.h; path = PSFoundation/Classes/ext.h; sourceTree = "<group>"; };
+		C2636B5F5041713E9F3AB020DBAD7728 /* AbstractModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractModel.m; path = PSFoundation/Classes/AbstractModel.m; sourceTree = "<group>"; };
+		C2D5D7FD59F32F5B3428163572D26CEC /* ODSayApiParameterSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ODSayApiParameterSet.swift; sourceTree = "<group>"; };
 		C373A91EA66E80D10D82AB4A8A5BAAB7 /* Pods-ODSayApiSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODSayApiSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C467A4A9EA09553785D1734C8C007354 /* NSObject+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+PSFoundation.h"; path = "PSFoundation/Classes/NSObject+PSFoundation.h"; sourceTree = "<group>"; };
+		C437D683FFCB0A021CA7EBC24742EBCE /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = PSFoundation/Assets/en.lproj; sourceTree = "<group>"; };
 		C71C655F96517C7FFC53B0222297CC80 /* Pods-ODSayApiSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ODSayApiSDK_Example-resources.sh"; sourceTree = "<group>"; };
 		C77180FA4979E7DE252316ED377B1A22 /* NSDictionary+w3action.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+w3action.h"; path = "w3action/Classes/NSDictionary+w3action.h"; sourceTree = "<group>"; };
 		C9463EB11DE165E983BAF26F9EA8EA22 /* w3action.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = w3action.xcconfig; sourceTree = "<group>"; };
+		CA1D2A3EB1A27220F468F03DF19AA932 /* ODSayApiResultModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ODSayApiResultModel.swift; sourceTree = "<group>"; };
+		CC2E232455DFB56635D834EF8FC90D94 /* PSFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSFoundation.xcconfig; sourceTree = "<group>"; };
+		CD9DF0A2448E6A8CF64ADF72B730C20E /* NSDate+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+PSFoundation.h"; path = "PSFoundation/Classes/NSDate+PSFoundation.h"; sourceTree = "<group>"; };
 		CE868CC0EA54849DAF1F4A453FD11F8B /* w3action-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "w3action-prefix.pch"; sourceTree = "<group>"; };
-		CEF3CA8FD4F35A553C4BD7D33A6B936C /* NSBundle+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+PSFoundation.m"; path = "PSFoundation/Classes/NSBundle+PSFoundation.m"; sourceTree = "<group>"; };
-		D6B30C660DCFA6770A81139BF08F723E /* NSDate+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+PSFoundation.m"; path = "PSFoundation/Classes/NSDate+PSFoundation.m"; sourceTree = "<group>"; };
 		D9B1DFD864B3960B7F91E61704B47C1D /* apxml-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "apxml-dummy.m"; sourceTree = "<group>"; };
-		DAD023B4EC32FBFCF6C30D3FAE071401 /* PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSFoundation.m; path = PSFoundation/Classes/PSFoundation.m; sourceTree = "<group>"; };
 		DB785B28FC73283F6135A0A7D8C11E20 /* Pods-ODSayApiSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ODSayApiSDK_Tests-resources.sh"; sourceTree = "<group>"; };
-		DCA237A41D3F67B100B56EF3 /* ODSayApiParameterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODSayApiParameterSet.swift; sourceTree = "<group>"; };
-		DCA237A71D3F693000B56EF3 /* ODSayApiResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODSayApiResultModel.swift; sourceTree = "<group>"; };
-		DCA237A91D3F7CCD00B56EF3 /* ODSayApiResultCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODSayApiResultCode.swift; sourceTree = "<group>"; };
+		DE520432E92109B7717EFFCECE01686A /* NSURLRequest+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+PSFoundation.m"; path = "PSFoundation/Classes/NSURLRequest+PSFoundation.m"; sourceTree = "<group>"; };
 		DED19506A8812CC25208EF25C31EF681 /* apxml.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = apxml.modulemap; sourceTree = "<group>"; };
-		E043B63AF8A83ED83124563C094491EC /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = PSFoundation/Assets/ko.lproj; sourceTree = "<group>"; };
+		E0FBDA0BFB0A83AB0CF8EBFF9EED18FC /* ResourceBundle-PSFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PSFoundation-Info.plist"; sourceTree = "<group>"; };
 		E3C061EACBF6CB3DA6252D212F88ADAC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		E6940816D74F9B8C28196E466EBE04E6 /* AbstractJSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractJSONModel.h; path = PSFoundation/Classes/AbstractJSONModel.h; sourceTree = "<group>"; };
-		E72F9E8704603DC7FF0573A85E83C416 /* DataLoadValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataLoadValidator.h; path = PSFoundation/Classes/DataLoadValidator.h; sourceTree = "<group>"; };
-		E74112FD7CEB8A0ED3DB296158DEA375 /* AbstractJSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractJSONModel.m; path = PSFoundation/Classes/AbstractJSONModel.m; sourceTree = "<group>"; };
+		E5F79F4D731DD18DC0D59D4A951D68EB /* NSObject+PSFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PSFoundation.m"; path = "PSFoundation/Classes/NSObject+PSFoundation.m"; sourceTree = "<group>"; };
 		E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EED1C172B3EBB6091EE89000ADCDB5F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF82006872056A43ABAC0DB253507F28 /* HTTPActionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPActionManager.h; path = w3action/Classes/HTTPActionManager.h; sourceTree = "<group>"; };
 		F20EADAC9927B7C6E78B57C809250A2B /* APAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APAttribute.h; sourceTree = "<group>"; };
 		F4EB1B5512D29066C0AA3031FF60DB1C /* ODSayApiSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODSayApiSDK-prefix.pch"; sourceTree = "<group>"; };
-		F5A225132F22ED5A09A19175177DA9B6 /* PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSFoundation.h; path = PSFoundation/Classes/PSFoundation.h; sourceTree = "<group>"; };
-		F7E721F84EC0091EC4FED4F5B337531C /* AbstractModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractModel.h; path = PSFoundation/Classes/AbstractModel.h; sourceTree = "<group>"; };
 		F81D7DCB5471B17E97A55360F6F2D47B /* w3action.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = w3action.modulemap; sourceTree = "<group>"; };
-		F98585D8C935F2D7060944E137F17DFD /* NSURL+PSFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+PSFoundation.h"; path = "PSFoundation/Classes/NSURL+PSFoundation.h"; sourceTree = "<group>"; };
 		FAF8C78FA67FAC8F3F65C3CD28CFA20B /* w3action.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = w3action.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2B730A39168B53A4E30AE085CECF45 /* ODSayApiAppCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ODSayApiAppCenter.swift; sourceTree = "<group>"; };
 		FC89D6E20B10ECA3045E8CF2EDCB5ECD /* Pods-ODSayApiSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ODSayApiSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		123033A8EC06639A2B7F6E72CD3CA993 /* Frameworks */ = {
+		1CD4CE61931EB25E05B743DD1F578A9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DBB2F9203534D222E1B8C8538A8BA /* apxml.framework in Frameworks */,
+				2A0EBB1EC4FA2863C5E13C15F1A41AD1 /* Foundation.framework in Frameworks */,
+				35FBE2A5D1F3B7A3B867598F81C1BB6A /* PSFoundation.framework in Frameworks */,
+				2998F50F1A7578F86C566A641B91F960 /* w3action.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498F0DF2C7F8F8016C2BB57F3DD92F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AF05D4B46CA6D333245B7189EDFF83 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,22 +306,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		881A6487951652ABB92A8C122D7A2C0F /* Frameworks */ = {
+		7A51E972BEC2E596A2C9D3D94F48B0FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90EB2FB2077E13690BCDA3276EE2F76E /* apxml.framework in Frameworks */,
-				E0A4C855349529AEBA459CB3A0497A14 /* Foundation.framework in Frameworks */,
-				CD0C0B01024F17D88E7208B203DBE571 /* PSFoundation.framework in Frameworks */,
-				9EE821031658FC9CF5B976CF67CAFE24 /* w3action.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DEEDCD418A08859A03B5050F9BD8922 /* Frameworks */ = {
+		9C37907651C1D82ECFE346D818476314 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72705C4494E93636E268D8820F4D8419 /* Foundation.framework in Frameworks */,
+				D397094FD72A05946D51DA1A6D4DEA1F /* apxml.framework in Frameworks */,
+				2CC8B34B7B387A10A7A9ABBDAAB79FC8 /* CFNetwork.framework in Frameworks */,
+				9BD9F0A47A3883873E7D9D6002FF8F05 /* Foundation.framework in Frameworks */,
+				6437F118D349C9049B3305D89FE1BAF4 /* PSFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,17 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF35BD00057049AF1B3593A178BE18F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB191866A902E2BDF8D10517E5677595 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8ED180896ACD46588F5DA6D90420F6B0 /* apxml.framework in Frameworks */,
-				497FCA4B2698186464A0934C39F42F9D /* CFNetwork.framework in Frameworks */,
-				EF1E67C231AC1D0B402E0C64BB0C7326 /* Foundation.framework in Frameworks */,
-				529FEE58D9CC72CB01CB084E2CB62D2F /* PSFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,41 +343,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E947A5B7DE54AAE8DE61CAD2DDD0BC5 /* PSFoundation */ = {
+		127366371B2C216A4896F0722A3556D0 /* PSFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				E6940816D74F9B8C28196E466EBE04E6 /* AbstractJSONModel.h */,
-				E74112FD7CEB8A0ED3DB296158DEA375 /* AbstractJSONModel.m */,
-				F7E721F84EC0091EC4FED4F5B337531C /* AbstractModel.h */,
-				7C21B4B8D970B9896C3EBDDD439AF0F7 /* AbstractModel.m */,
-				94D711141E30A83DE00DAA8D44D1E8DF /* BaseObject.h */,
-				9C890F3CB3E28E53350F72C44A5C9948 /* BaseObject.m */,
-				E72F9E8704603DC7FF0573A85E83C416 /* DataLoadValidator.h */,
-				1153721BE3EFD3B51151FDAB5DCB132E /* DataLoadValidator.m */,
-				91DC109A5C8234B381236045B3AB8A95 /* ext.h */,
-				08DF62EF60221A064D198B6C300930AC /* model.h */,
-				59CE4D58D9D8A75D0ADF2517FC409097 /* NSArray+PSFoundation.h */,
-				0AC734DF3525F111B8CBC770BAB4326D /* NSArray+PSFoundation.m */,
-				44243A80F03D960900592628B667EB55 /* NSBundle+PSFoundation.h */,
-				CEF3CA8FD4F35A553C4BD7D33A6B936C /* NSBundle+PSFoundation.m */,
-				5F57F05D6370D00D3272306409B1E10C /* NSDate+PSFoundation.h */,
-				D6B30C660DCFA6770A81139BF08F723E /* NSDate+PSFoundation.m */,
-				B9AEAD4E6A253E8AC709198349E49A8A /* NSFileManager+PSFoundation.h */,
-				593E43F680C7C1DB1A1A036BC5CABB3D /* NSFileManager+PSFoundation.m */,
-				C467A4A9EA09553785D1734C8C007354 /* NSObject+PSFoundation.h */,
-				AF9DE700C3E3E47E93EDBF508619AEA0 /* NSObject+PSFoundation.m */,
-				B3EFB21851541D142C3D2ECC3BF91611 /* NSString+PSFoundation.h */,
-				5D05B9773E09F95FB063615FB7852E57 /* NSString+PSFoundation.m */,
-				F98585D8C935F2D7060944E137F17DFD /* NSURL+PSFoundation.h */,
-				6E1A656EF395E8F91F23CCEAEFF17B80 /* NSURL+PSFoundation.m */,
-				593C709C482E9F952AB9359564489625 /* NSURLRequest+PSFoundation.h */,
-				4A6784509C10320CA13751A680EC2CA4 /* NSURLRequest+PSFoundation.m */,
-				F5A225132F22ED5A09A19175177DA9B6 /* PSFoundation.h */,
-				DAD023B4EC32FBFCF6C30D3FAE071401 /* PSFoundation.m */,
-				C8449F04C967F83749B6ADEAE2007BF0 /* Resources */,
-				8D096906C114A00A31ED726677E5995F /* Support Files */,
+				BE3CD4650EDD0FC0948C28E38A5070F6 /* AbstractJSONModel.h */,
+				00B221A5D170740F0AB5BF7883CF7CF5 /* AbstractJSONModel.m */,
+				30B4CE0CC7E529CCC9F193C30EBA9BBB /* AbstractModel.h */,
+				C2636B5F5041713E9F3AB020DBAD7728 /* AbstractModel.m */,
+				385DC8FEE71BF41DDC4F62A8F1A84B1C /* BaseObject.h */,
+				63290A9F8D9EBE8E539FC63855768E69 /* BaseObject.m */,
+				1A556D93CF2383BFBFA21826943C7FE5 /* DataLoadValidator.h */,
+				297D88BD5AC666894F14DAC59E1151BD /* DataLoadValidator.m */,
+				C04CBBE2DDCC5036E55C5DE6CFFA3725 /* ext.h */,
+				2B06135CD306EA4BFDA29C456A06D50D /* model.h */,
+				098AD6BE2215AFA0FD145F4956D65168 /* NSArray+PSFoundation.h */,
+				82BDEC5658EC2844D9B0E927ED1DFA15 /* NSArray+PSFoundation.m */,
+				11A0D173A1B123523428286A51132ACC /* NSBundle+PSFoundation.h */,
+				AE6F0AC882796C61D0CCE72FCBDBA1F2 /* NSBundle+PSFoundation.m */,
+				CD9DF0A2448E6A8CF64ADF72B730C20E /* NSDate+PSFoundation.h */,
+				015F84A6616B0A1249E5B6F3EB162F6E /* NSDate+PSFoundation.m */,
+				1F150C349BCA9D008341D16E66A2B505 /* NSFileManager+PSFoundation.h */,
+				7F3754B0955E328D1FE3E02FE3814048 /* NSFileManager+PSFoundation.m */,
+				045F2A28B5708175C5C30A06AE256FE5 /* NSObject+PSFoundation.h */,
+				E5F79F4D731DD18DC0D59D4A951D68EB /* NSObject+PSFoundation.m */,
+				8443D44FECE75DCED4598C3DC480762D /* NSString+PSFoundation.h */,
+				7252C9F4A0ADFFA8128CF738313794AA /* NSString+PSFoundation.m */,
+				5FF8CD8234E70747A36C0FA15C1E7EF4 /* NSURL+PSFoundation.h */,
+				51E29E7871D21CAAA350D3123A2A5B8E /* NSURL+PSFoundation.m */,
+				81DA83BA9C0DD55F228FBAD445ECE6EA /* NSURLRequest+PSFoundation.h */,
+				DE520432E92109B7717EFFCECE01686A /* NSURLRequest+PSFoundation.m */,
+				BE945086C9725A3FF7F380E87779CED9 /* PSFoundation.h */,
+				766530F76EE96760F105D0176E1561D6 /* PSFoundation.m */,
+				C199D5EA5BC7E41ECA69715EF2959F26 /* Resources */,
+				D044881C766DEADFCD9AE63822938CFA /* Support Files */,
 			);
 			path = PSFoundation;
+			sourceTree = "<group>";
+		};
+		3B830EE0DA994280A04CB2AB2F81A4AD /* ODSayApiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4EB3C8339A10868C56057743244ED2B6 /* Classes */,
+			);
+			path = ODSayApiSDK;
+			sourceTree = "<group>";
+		};
+		4EB3C8339A10868C56057743244ED2B6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B730A39168B53A4E30AE085CECF45 /* ODSayApiAppCenter.swift */,
+				C2D5D7FD59F32F5B3428163572D26CEC /* ODSayApiParameterSet.swift */,
+				5632E9984014829387998DE62F0B2096 /* ODSayApiResultCode.swift */,
+				CA1D2A3EB1A27220F468F03DF19AA932 /* ODSayApiResultModel.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		51F2D53C7A0D76BF54655839436C6D13 /* Pods-ODSayApiSDK_Example */ = {
@@ -441,37 +464,11 @@
 		8BAE548AAD992D9B3B08B7631546F8A3 /* ODSayApiSDK */ = {
 			isa = PBXGroup;
 			children = (
-				E848812C06590FF1BA452AB173780965 /* ODSayApiSDK */,
+				3B830EE0DA994280A04CB2AB2F81A4AD /* ODSayApiSDK */,
 				DB462519E4DCE9107E868612EE2EDA96 /* Support Files */,
 			);
 			name = ODSayApiSDK;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		8D096906C114A00A31ED726677E5995F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2557079A9730461B51AF9D2E331F2543 /* Info.plist */,
-				99DFEF61724689736C9141D386FE30C1 /* PSFoundation.modulemap */,
-				07F549652245FDE53B8CC436CD44C533 /* PSFoundation.xcconfig */,
-				85B2FC3159FCAE7C36F0A3CDCF4C663D /* PSFoundation-dummy.m */,
-				7FFEC146FCFE4CDE247B84C49920D3EF /* PSFoundation-prefix.pch */,
-				BF02D3EE84374FBB7E6F30E7438B26E2 /* PSFoundation-umbrella.h */,
-				387502D3973793CF9AFB1F4FF9309D29 /* ResourceBundle-PSFoundation-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PSFoundation";
-			sourceTree = "<group>";
-		};
-		8DA9AFFC90F05696995B160374B3CF60 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				25663CD094B598E0777981721C85CD5F /* ODSayApiAppCenter.swift */,
-				DCA237A41D3F67B100B56EF3 /* ODSayApiParameterSet.swift */,
-				DCA237A71D3F693000B56EF3 /* ODSayApiResultModel.swift */,
-				DCA237A91D3F7CCD00B56EF3 /* ODSayApiResultCode.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		903F2A1363603F8014D90397A7DB2F7E /* apxml */ = {
@@ -493,7 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				903F2A1363603F8014D90397A7DB2F7E /* apxml */,
-				2E947A5B7DE54AAE8DE61CAD2DDD0BC5 /* PSFoundation */,
+				127366371B2C216A4896F0722A3556D0 /* PSFoundation */,
 				FCB7BED5751F0524D9597219861A3F70 /* w3action */,
 			);
 			name = Pods;
@@ -519,13 +516,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C8449F04C967F83749B6ADEAE2007BF0 /* Resources */ = {
+		C199D5EA5BC7E41ECA69715EF2959F26 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28DB0BE0EF7B7EA0AE135681EF592FC4 /* en.lproj */,
-				E043B63AF8A83ED83124563C094491EC /* ko.lproj */,
+				C437D683FFCB0A021CA7EBC24742EBCE /* en.lproj */,
+				5D38DE7C00838FB75C2B7CF8C6275F33 /* ko.lproj */,
+				671B85F55CC39E163625454983EFE03A /* zh-Hans.lproj */,
+				159E0F301B1719A8EDF46637E0694354 /* zh-Hant.lproj */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D044881C766DEADFCD9AE63822938CFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3217EF96CFEA6245AB9D6D07B497408 /* Info.plist */,
+				582EDAC3C2B649D3C3F338D5DA2B8607 /* PSFoundation.modulemap */,
+				CC2E232455DFB56635D834EF8FC90D94 /* PSFoundation.xcconfig */,
+				3548415F519C0F000E074D41B573B77C /* PSFoundation-dummy.m */,
+				A18DFA987756341D8EEA5D2387023AE7 /* PSFoundation-prefix.pch */,
+				AFAE808E8E74B46D10DA35A87210445C /* PSFoundation-umbrella.h */,
+				E0FBDA0BFB0A83AB0CF8EBFF9EED18FC /* ResourceBundle-PSFoundation-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PSFoundation";
 			sourceTree = "<group>";
 		};
 		D8386694A5EB2B22F8AEC13C83579D2C /* Support Files */ = {
@@ -563,14 +577,6 @@
 				E925E5CC394A748E2CBCFDB2765153A6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		E848812C06590FF1BA452AB173780965 /* ODSayApiSDK */ = {
-			isa = PBXGroup;
-			children = (
-				8DA9AFFC90F05696995B160374B3CF60 /* Classes */,
-			);
-			path = ODSayApiSDK;
 			sourceTree = "<group>";
 		};
 		EE1B640A5170E565BAA5AFDAE9313B5A /* Development Pods */ = {
@@ -618,25 +624,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1737AD4AFE0780844D02913D64ECA3F7 /* Headers */ = {
+		249AD45A4998697804D7A8594560B14D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA75E6A92D3165BEE210A6DEDC77998 /* HTTPActionManager.h in Headers */,
-				DAE3C5A3C164E6CB7E9C09725AD449A8 /* HTTPRequestObject.h in Headers */,
-				CFD709F8DB2A286048B1758EA66133C6 /* NSData+w3action.h in Headers */,
-				13CA9B634E9A55AB87C81FF422369F24 /* NSDictionary+w3action.h in Headers */,
-				AB6905AA9889A95C9EDFA7E6C1157F29 /* NSString+w3action.h in Headers */,
-				D1AFD592CA7CB5D79D6D38935743BAAB /* w3action-umbrella.h in Headers */,
-				5B7A60E7ABD5509F00E42E9766960D6D /* w3action.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		578955A779FF3CCA3165B41801CE72B7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				335DBDA33FF7314C278624A7FFC8832F /* ODSayApiSDK-umbrella.h in Headers */,
+				C5BD4225641FF55C27E3BCB884122C8A /* ODSayApiSDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,26 +652,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5108CA977A50C7D36F9D92AED93834D /* Headers */ = {
+		9775420B07E0590270C34AB8AA1161B1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85E9C8D3648CE50ACD3BC5D3BC0C10C /* AbstractJSONModel.h in Headers */,
-				7DEB571C7CB48A264E862AB71AB246AB /* AbstractModel.h in Headers */,
-				84D3896585E8F48C3211B9ACC246F7AB /* BaseObject.h in Headers */,
-				31DBA7A13EF5AB019A1695A5EB5B2ABF /* DataLoadValidator.h in Headers */,
-				D2EDEB0DEB7D2E73CD6312D976BB3DAB /* ext.h in Headers */,
-				A404E0F13E2903D56E12207512B071B2 /* model.h in Headers */,
-				12145C7BFB439523D0EB7384B11C6D65 /* NSArray+PSFoundation.h in Headers */,
-				4FC8DB44D0C94337CC40E28E46BEF12E /* NSBundle+PSFoundation.h in Headers */,
-				067127B682CC1AE8B5D2CA6B188080D3 /* NSDate+PSFoundation.h in Headers */,
-				6405253C252CB42977EDDF1BF97E6DAD /* NSFileManager+PSFoundation.h in Headers */,
-				295EA071FCD0597F5FC9E2D6F49B0E48 /* NSObject+PSFoundation.h in Headers */,
-				4A224DF52F4D51E9DA954551B4043284 /* NSString+PSFoundation.h in Headers */,
-				BAC07DE9A1FB31049F87D43F0D353D44 /* NSURL+PSFoundation.h in Headers */,
-				66E22A7A109F8ACF1554909134836FA3 /* NSURLRequest+PSFoundation.h in Headers */,
-				4B6ED973C0E685C5291E64BA58964F7A /* PSFoundation-umbrella.h in Headers */,
-				62D8C569C17C4C83AB29359F30E38A9E /* PSFoundation.h in Headers */,
+				66A99CF1085843BE2D17FD4AC596D899 /* HTTPActionManager.h in Headers */,
+				250F0907C4EBCF0E5E5504E20F1DFFEF /* HTTPRequestObject.h in Headers */,
+				6A7B2614AEAC920B767098F98CE93615 /* NSData+w3action.h in Headers */,
+				30C73CAD5EBD86EBF8086134B599AD48 /* NSDictionary+w3action.h in Headers */,
+				C07F6F1855870D698234088181E696A9 /* NSString+w3action.h in Headers */,
+				739FD1FBDD458B0840986636FD6CBA29 /* w3action-umbrella.h in Headers */,
+				75864DD2D368B5DB55D2C47603F03F66 /* w3action.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3879F5BE4DAD28D9E37FF4E2DC4004 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC828C96403F7F817BD8898993133EF /* AbstractJSONModel.h in Headers */,
+				69F7A875C68114FC56753401B041BEEB /* AbstractModel.h in Headers */,
+				10C58E4B76EB64FEA8EA487F92CCEE86 /* BaseObject.h in Headers */,
+				F392808BE34900F8A4E1934D17249C5B /* DataLoadValidator.h in Headers */,
+				999E3573E46DC8B5970B67D285ACA613 /* ext.h in Headers */,
+				B0FA184A3601EE4EBB373E60EE0FBBCE /* model.h in Headers */,
+				2D8EDDC396C2E813308E0DD60AB5C911 /* NSArray+PSFoundation.h in Headers */,
+				842DB17DE68FA48181BD4B96F1FF241B /* NSBundle+PSFoundation.h in Headers */,
+				39E43F655916498A8FC697424A99FAF8 /* NSDate+PSFoundation.h in Headers */,
+				A3C216475734FC7EB24F01DC60845852 /* NSFileManager+PSFoundation.h in Headers */,
+				6D11EC1D0B7ACD35BBAA7EB8A757202E /* NSObject+PSFoundation.h in Headers */,
+				8683C6DB27FFE976D62CA3D42A7284B9 /* NSString+PSFoundation.h in Headers */,
+				8A3F743AB09CB77478E84DE86E469794 /* NSURL+PSFoundation.h in Headers */,
+				9D27D4116887991FDA95A1960A124E9B /* NSURLRequest+PSFoundation.h in Headers */,
+				F850DB2C695046BC46774C0DB4628F95 /* PSFoundation-umbrella.h in Headers */,
+				228E912A56BACBBB5D3A85A5CB65ED97 /* PSFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,25 +700,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		132AB67B5CFDD67DF8394E788F93817D /* PSFoundation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3CB47752BA4041ECEE94EE155EFEE99D /* Build configuration list for PBXNativeTarget "PSFoundation" */;
-			buildPhases = (
-				9665747050F53AF1A5D0D53CDD5068F2 /* Sources */,
-				8DEEDCD418A08859A03B5050F9BD8922 /* Frameworks */,
-				84FC739BC043B2EFA519557A450F342C /* Resources */,
-				A5108CA977A50C7D36F9D92AED93834D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FC8DEEFE63E19EB68D37A3BA32FE190D /* PBXTargetDependency */,
-			);
-			name = PSFoundation;
-			productName = PSFoundation;
-			productReference = 828321D2E7C18365EC282668565A3DAB /* PSFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		261DB05B8082D26E4944B3A97900D3CF /* Pods-ODSayApiSDK_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3F2D76FA18F2318FAF0BB1B44768454 /* Build configuration list for PBXNativeTarget "Pods-ODSayApiSDK_Tests" */;
@@ -751,13 +738,51 @@
 			productReference = ACB4D465238578D0718A781129E1A3DF /* Pods_ODSayApiSDK_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		48C31DDC4C805A46F712BA4E1FE35107 /* PSFoundation-PSFoundation */ = {
+		6C8E98B1204C3A12137878EC3AFCDB04 /* w3action */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 809F0B38CA25611C43D8BC11D7EBA5F7 /* Build configuration list for PBXNativeTarget "PSFoundation-PSFoundation" */;
+			buildConfigurationList = CA4A917D13E3DB0473B56235778431CD /* Build configuration list for PBXNativeTarget "w3action" */;
 			buildPhases = (
-				2FD606B51F6C1C5390C18FC30E6BB79B /* Sources */,
-				123033A8EC06639A2B7F6E72CD3CA993 /* Frameworks */,
-				0E88A041C5181AC5CF72FA4192A3679E /* Resources */,
+				CF049BCCFD1D91D7427F08CB6C10DD50 /* Sources */,
+				9C37907651C1D82ECFE346D818476314 /* Frameworks */,
+				9775420B07E0590270C34AB8AA1161B1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2AFF52A9287FC922978966A19B305C0 /* PBXTargetDependency */,
+				6BE15CE9E274F42BEC37F3CE08157FD7 /* PBXTargetDependency */,
+			);
+			name = w3action;
+			productName = w3action;
+			productReference = 9824D0836AB93DF26FA029D344C822E1 /* w3action.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D8E0269ADA7AA6D2893592D6DF4C0AE /* PSFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8407E4DCDC9AC3A46408607B272EE1D6 /* Build configuration list for PBXNativeTarget "PSFoundation" */;
+			buildPhases = (
+				8888F93E5CA3C0989C7613F034B60521 /* Sources */,
+				498F0DF2C7F8F8016C2BB57F3DD92F04 /* Frameworks */,
+				3D15618D0DEE062041721C8F489B0AD1 /* Resources */,
+				9D3879F5BE4DAD28D9E37FF4E2DC4004 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF4B3EACB6337B4ECACC0212429516E /* PBXTargetDependency */,
+			);
+			name = PSFoundation;
+			productName = PSFoundation;
+			productReference = 828321D2E7C18365EC282668565A3DAB /* PSFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B3E9A7F43E5C7671BE3CF958E1A0F2C /* PSFoundation-PSFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B83B1330CDAFA60892061C6B148D7C1 /* Build configuration list for PBXNativeTarget "PSFoundation-PSFoundation" */;
+			buildPhases = (
+				6B88025F7F8A0A31A33C7C54009EC36E /* Sources */,
+				7A51E972BEC2E596A2C9D3D94F48B0FF /* Frameworks */,
+				E281EEF6B2EBB64CD48E22B0EDA93AE8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -768,23 +793,24 @@
 			productReference = BCC7E03AA9D02E7D8D4B66EE9283120A /* PSFoundation.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		8F2C70D00310CD5905299A984F3781DC /* w3action */ = {
+		E1224F5D915087415767C974759F3D19 /* ODSayApiSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06780C87A5039063C4C7A4AFE30E1DDD /* Build configuration list for PBXNativeTarget "w3action" */;
+			buildConfigurationList = 6EDAE7914933B882E938776F94B68ADB /* Build configuration list for PBXNativeTarget "ODSayApiSDK" */;
 			buildPhases = (
-				DB7F59862CA380D205B5340CD6B1B59A /* Sources */,
-				BB191866A902E2BDF8D10517E5677595 /* Frameworks */,
-				1737AD4AFE0780844D02913D64ECA3F7 /* Headers */,
+				733C16E5F972F890C99783B5749DBF0D /* Sources */,
+				1CD4CE61931EB25E05B743DD1F578A9F /* Frameworks */,
+				249AD45A4998697804D7A8594560B14D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE4452F3D21E7F02B19F26B9CE2C9CDE /* PBXTargetDependency */,
-				5380E760038E23D35BA7114ED2CF4B26 /* PBXTargetDependency */,
+				F72A05FE64D84B66F4BA660810191C7C /* PBXTargetDependency */,
+				7215FD56B71A24FA160CC6DEC107F161 /* PBXTargetDependency */,
+				F659939D80381E3203B020FA1F20F885 /* PBXTargetDependency */,
 			);
-			name = w3action;
-			productName = w3action;
-			productReference = 9824D0836AB93DF26FA029D344C822E1 /* w3action.framework */;
+			name = ODSayApiSDK;
+			productName = ODSayApiSDK;
+			productReference = 85A314D4222316E726F5D464738DB5B2 /* ODSayApiSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E27FA0BFB9BE3AFBC6FD6D888F8CD0ED /* apxml */ = {
@@ -802,26 +828,6 @@
 			name = apxml;
 			productName = apxml;
 			productReference = B139164EFB080237248BEBA2421F9077 /* apxml.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E7EEC133B7D4BB06A0B4D431B4CA7CEA /* ODSayApiSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8A86146F7790C68A6FFE8382E22F4EC /* Build configuration list for PBXNativeTarget "ODSayApiSDK" */;
-			buildPhases = (
-				6B51A37D95A503F85086B63315B48CD5 /* Sources */,
-				881A6487951652ABB92A8C122D7A2C0F /* Frameworks */,
-				578955A779FF3CCA3165B41801CE72B7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79B916C215098D46D6B99983054AF950 /* PBXTargetDependency */,
-				978CE2D2299D883E77E20CF5A3F5445E /* PBXTargetDependency */,
-				256A280C22A2254F23944EA977003A10 /* PBXTargetDependency */,
-			);
-			name = ODSayApiSDK;
-			productName = ODSayApiSDK;
-			productReference = 85A314D4222316E726F5D464738DB5B2 /* ODSayApiSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -846,44 +852,39 @@
 			projectRoot = "";
 			targets = (
 				E27FA0BFB9BE3AFBC6FD6D888F8CD0ED /* apxml */,
-				E7EEC133B7D4BB06A0B4D431B4CA7CEA /* ODSayApiSDK */,
+				E1224F5D915087415767C974759F3D19 /* ODSayApiSDK */,
 				3393FA9E44C437A410D8EBDD37450284 /* Pods-ODSayApiSDK_Example */,
 				261DB05B8082D26E4944B3A97900D3CF /* Pods-ODSayApiSDK_Tests */,
-				132AB67B5CFDD67DF8394E788F93817D /* PSFoundation */,
-				48C31DDC4C805A46F712BA4E1FE35107 /* PSFoundation-PSFoundation */,
-				8F2C70D00310CD5905299A984F3781DC /* w3action */,
+				6D8E0269ADA7AA6D2893592D6DF4C0AE /* PSFoundation */,
+				7B3E9A7F43E5C7671BE3CF958E1A0F2C /* PSFoundation-PSFoundation */,
+				6C8E98B1204C3A12137878EC3AFCDB04 /* w3action */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0E88A041C5181AC5CF72FA4192A3679E /* Resources */ = {
+		3D15618D0DEE062041721C8F489B0AD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A8641BC24C2212FA54AD0DBD21E29E /* en.lproj in Resources */,
-				B656E218A0E0D647952C5C3346D07B46 /* ko.lproj in Resources */,
+				8AC328A1BF9CF11F286A5E0ABB29A2A8 /* PSFoundation.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84FC739BC043B2EFA519557A450F342C /* Resources */ = {
+		E281EEF6B2EBB64CD48E22B0EDA93AE8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF475FEFD4EFFBA4FFEF107B0F96B318 /* PSFoundation.bundle in Resources */,
+				6DD574EF230816DD41B852AEAE7B5519 /* en.lproj in Resources */,
+				105352A7751CDB1393CA9426ECF0B8D3 /* ko.lproj in Resources */,
+				6B418BF5DA70F56A8A2F5C5CA5D5FAB1 /* zh-Hans.lproj in Resources */,
+				01ACF939E9A7F2B9E4476C0579C800D7 /* zh-Hant.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2FD606B51F6C1C5390C18FC30E6BB79B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6826210070012DAC2E83D703B9467A62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -892,15 +893,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B51A37D95A503F85086B63315B48CD5 /* Sources */ = {
+		6B88025F7F8A0A31A33C7C54009EC36E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA237A81D3F693000B56EF3 /* ODSayApiResultModel.swift in Sources */,
-				E66D32F040A7A23DF4B685363162DB74 /* ODSayApiAppCenter.swift in Sources */,
-				DCA237A61D3F67DA00B56EF3 /* ODSayApiParameterSet.swift in Sources */,
-				DCA237AA1D3F7CCD00B56EF3 /* ODSayApiResultCode.swift in Sources */,
-				A3FDDBFF43F1F5A6BE2094D9EE40B577 /* ODSayApiSDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		733C16E5F972F890C99783B5749DBF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3370597A0FF278A612D8A7AEBE5A1ABB /* ODSayApiAppCenter.swift in Sources */,
+				718766E8462CC083C35ABCACC78A4D38 /* ODSayApiParameterSet.swift in Sources */,
+				16B3E37BDD9C496C92A0753551F01C75 /* ODSayApiResultCode.swift in Sources */,
+				22DD1DA24E4036065A7A4672E6A78F1D /* ODSayApiResultModel.swift in Sources */,
+				ECFC2A9AF193887701331D5109F5D9EC /* ODSayApiSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,24 +920,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9665747050F53AF1A5D0D53CDD5068F2 /* Sources */ = {
+		8888F93E5CA3C0989C7613F034B60521 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4276CC9FD9AD44D53C49A1F9372116F /* AbstractJSONModel.m in Sources */,
-				04F771CC044ED7B995F1168CEBFCC9A0 /* AbstractModel.m in Sources */,
-				FFB0C69F6C532447440969E2FD854DF1 /* BaseObject.m in Sources */,
-				2E84E0BEAE1DD4A4388B017C69B6021B /* DataLoadValidator.m in Sources */,
-				0BE432431AF502BBF9A3CFB5412984EE /* NSArray+PSFoundation.m in Sources */,
-				9F493C13F97A0DAB087499477F898769 /* NSBundle+PSFoundation.m in Sources */,
-				01F66F2DF94EB474989760272F3E1A39 /* NSDate+PSFoundation.m in Sources */,
-				AE0E272E0B48D081EEBF822A2F9A4515 /* NSFileManager+PSFoundation.m in Sources */,
-				FC8D18B38E8CD68246F7C19B08EAA9A3 /* NSObject+PSFoundation.m in Sources */,
-				0B83C30CD45590B53328FEC9E75CABEE /* NSString+PSFoundation.m in Sources */,
-				C2735CF840CF5D728C00DF116CAE21C0 /* NSURL+PSFoundation.m in Sources */,
-				59A7DA6642D818EE82890555C37FBF47 /* NSURLRequest+PSFoundation.m in Sources */,
-				DFAADA74A58D293CB3B857D5856E35C2 /* PSFoundation-dummy.m in Sources */,
-				E038E299C90E7DAB415569BFAAC0974E /* PSFoundation.m in Sources */,
+				8034E652150D668CAE9B64EBA94D48CC /* AbstractJSONModel.m in Sources */,
+				4348BB55AEBB678A6F4D67ED6FFD5866 /* AbstractModel.m in Sources */,
+				825A20287D83489D8BEBA4E30BCCF1B4 /* BaseObject.m in Sources */,
+				2D0B4B3484AACB8BFE53AE65338A74AD /* DataLoadValidator.m in Sources */,
+				5F111C371F094D1A51489C69EC00F976 /* NSArray+PSFoundation.m in Sources */,
+				EE10A9657FE6150C899EEF5DF688ABE3 /* NSBundle+PSFoundation.m in Sources */,
+				13C11E46CB490EFC726DF09DCFA7ABFB /* NSDate+PSFoundation.m in Sources */,
+				C53124BB4062CFE2900136443C05FB66 /* NSFileManager+PSFoundation.m in Sources */,
+				0CD9B37EC19F3A695599BA9CA96C064D /* NSObject+PSFoundation.m in Sources */,
+				6278F55EAC9494ACFF4E0C0B6950D5B5 /* NSString+PSFoundation.m in Sources */,
+				5F6F5A59073217A253D8F6E4496406DE /* NSURL+PSFoundation.m in Sources */,
+				0805B50EB426A5930CFA993722940D3D /* NSURLRequest+PSFoundation.m in Sources */,
+				9B9E6724FDDE65812530E3015BF0F48F /* PSFoundation-dummy.m in Sources */,
+				A92EAA181CDBC9A4C1D1B1C68B5A9F6A /* PSFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,46 +952,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB7F59862CA380D205B5340CD6B1B59A /* Sources */ = {
+		CF049BCCFD1D91D7427F08CB6C10DD50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BB7CE3E9E52C8416D547E17C2901E75 /* HTTPActionManager.m in Sources */,
-				1860A112584C444397A735491EAF01EE /* HTTPRequestObject.m in Sources */,
-				2D03C043C2C6E3A189C50B1D458F83E2 /* NSData+w3action.m in Sources */,
-				81547CD612DFD5012B7A826C85D7E5F7 /* NSDictionary+w3action.m in Sources */,
-				5B04C1A373E2CC86FFA584AB807EE25F /* NSString+w3action.m in Sources */,
-				05393B58BE2D798477B3BCE24270AB80 /* w3action-dummy.m in Sources */,
-				6F42F0E97837D912223A70B87CCD1D02 /* w3action.m in Sources */,
+				79D81AF7768B2D756F1C8D9A1A42DD26 /* HTTPActionManager.m in Sources */,
+				2D3794C681A7DA4425D26237CE67F879 /* HTTPRequestObject.m in Sources */,
+				2CA88CEA4205BF2F0F58DE060C09A8D0 /* NSData+w3action.m in Sources */,
+				FAFB780B037A7BEF52A403D8170FD478 /* NSDictionary+w3action.m in Sources */,
+				401B12E2A0625D5842B1B95317EE3CDA /* NSString+w3action.m in Sources */,
+				0C720DDEC0A40012ECC35EFF16AFAA68 /* w3action-dummy.m in Sources */,
+				82D5BB7846A6401493BBE29B428F82AE /* w3action.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		256A280C22A2254F23944EA977003A10 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = w3action;
-			target = 8F2C70D00310CD5905299A984F3781DC /* w3action */;
-			targetProxy = 83FC403DA380009F5D1083FF3C21A87B /* PBXContainerItemProxy */;
-		};
 		3FAE737B69EC90768CD16CFC2CC35C15 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ODSayApiSDK;
-			target = E7EEC133B7D4BB06A0B4D431B4CA7CEA /* ODSayApiSDK */;
+			target = E1224F5D915087415767C974759F3D19 /* ODSayApiSDK */;
 			targetProxy = B6D4943C7A70A5BE90DCE930D271B63E /* PBXContainerItemProxy */;
 		};
-		5380E760038E23D35BA7114ED2CF4B26 /* PBXTargetDependency */ = {
+		6BE15CE9E274F42BEC37F3CE08157FD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = apxml;
 			target = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED /* apxml */;
-			targetProxy = 58BE35880245E7F0271C7F4EBD935F5E /* PBXContainerItemProxy */;
+			targetProxy = 06DA3443773AA0C62C70598224CED391 /* PBXContainerItemProxy */;
 		};
-		79B916C215098D46D6B99983054AF950 /* PBXTargetDependency */ = {
+		7215FD56B71A24FA160CC6DEC107F161 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PSFoundation;
-			target = 132AB67B5CFDD67DF8394E788F93817D /* PSFoundation */;
-			targetProxy = 621CA44490DBFC66172E7163D8AD46CE /* PBXContainerItemProxy */;
+			name = apxml;
+			target = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED /* apxml */;
+			targetProxy = D4E1C896D416FE12EC2AEBC8D60985C1 /* PBXContainerItemProxy */;
 		};
 		801AAB6F7A07C9D773C20DAAA0CE0EFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -991,35 +993,41 @@
 			target = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED /* apxml */;
 			targetProxy = 4BA0BA9219172CA3AC4E0EAEDA1EA91D /* PBXContainerItemProxy */;
 		};
-		978CE2D2299D883E77E20CF5A3F5445E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = apxml;
-			target = E27FA0BFB9BE3AFBC6FD6D888F8CD0ED /* apxml */;
-			targetProxy = 192E5E75B320AC3D70ECA6B7D2D30985 /* PBXContainerItemProxy */;
-		};
 		A74AD0C23A0D31DD36A218860B3636EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = w3action;
-			target = 8F2C70D00310CD5905299A984F3781DC /* w3action */;
+			target = 6C8E98B1204C3A12137878EC3AFCDB04 /* w3action */;
 			targetProxy = 708960F36A8A33DABD5962CAC26B524D /* PBXContainerItemProxy */;
 		};
-		CE4452F3D21E7F02B19F26B9CE2C9CDE /* PBXTargetDependency */ = {
+		BFF4B3EACB6337B4ECACC0212429516E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PSFoundation-PSFoundation";
+			target = 7B3E9A7F43E5C7671BE3CF958E1A0F2C /* PSFoundation-PSFoundation */;
+			targetProxy = 54557FC4A29B16D0F96A8F671E5E7FB7 /* PBXContainerItemProxy */;
+		};
+		D2AFF52A9287FC922978966A19B305C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PSFoundation;
-			target = 132AB67B5CFDD67DF8394E788F93817D /* PSFoundation */;
-			targetProxy = 29F7DBF5ABE65F7AFAA390230D6A6494 /* PBXContainerItemProxy */;
+			target = 6D8E0269ADA7AA6D2893592D6DF4C0AE /* PSFoundation */;
+			targetProxy = 0EB425C8255C7048571440A9052CDCD4 /* PBXContainerItemProxy */;
 		};
 		EC7CA44BAF9FD46862764EB4B1040157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PSFoundation;
-			target = 132AB67B5CFDD67DF8394E788F93817D /* PSFoundation */;
+			target = 6D8E0269ADA7AA6D2893592D6DF4C0AE /* PSFoundation */;
 			targetProxy = 90AD8EDDF1367BE817E419AD301C76A0 /* PBXContainerItemProxy */;
 		};
-		FC8DEEFE63E19EB68D37A3BA32FE190D /* PBXTargetDependency */ = {
+		F659939D80381E3203B020FA1F20F885 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "PSFoundation-PSFoundation";
-			target = 48C31DDC4C805A46F712BA4E1FE35107 /* PSFoundation-PSFoundation */;
-			targetProxy = 7A96F8E9E7FAC8A8590CA1915955A91B /* PBXContainerItemProxy */;
+			name = w3action;
+			target = 6C8E98B1204C3A12137878EC3AFCDB04 /* w3action */;
+			targetProxy = B46E350ECA677DA8037F5110562AF7D9 /* PBXContainerItemProxy */;
+		};
+		F72A05FE64D84B66F4BA660810191C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PSFoundation;
+			target = 6D8E0269ADA7AA6D2893592D6DF4C0AE /* PSFoundation */;
+			targetProxy = FE633D350E66E387C0115381AA31BE03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1062,6 +1070,65 @@
 			};
 			name = Release;
 		};
+		109690FE289E1A312BF6A9B3F7D971C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9463EB11DE165E983BAF26F9EA8EA22 /* w3action.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/w3action/w3action-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/w3action/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/w3action/w3action.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = w3action;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FB74EACA4EC75519AF013763CA44DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1538F05584FA47DCAC771D8DAD3B7D8D /* ODSayApiSDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ODSayApiSDK/ODSayApiSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ODSayApiSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ODSayApiSDK/ODSayApiSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ODSayApiSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		28FEACB43E2AC055AAA8C3FD56D65F4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C373A91EA66E80D10D82AB4A8A5BAAB7 /* Pods-ODSayApiSDK_Tests.debug.xcconfig */;
@@ -1095,43 +1162,9 @@
 			};
 			name = Debug;
 		};
-		37AA934C4E8D455D0DFCCFAD0553573F /* Release */ = {
+		29CFEA4D3F31A0015059F2648084EDA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F549652245FDE53B8CC436CD44C533 /* PSFoundation.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PSFoundation";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/PSFoundation/ResourceBundle-PSFoundation-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = PSFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		3B60CDC2C790D1CA80BBB35815CE2223 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F549652245FDE53B8CC436CD44C533 /* PSFoundation.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PSFoundation";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/PSFoundation/ResourceBundle-PSFoundation-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = PSFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		42387F3656DB99B382715FD886CCF02C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F549652245FDE53B8CC436CD44C533 /* PSFoundation.xcconfig */;
+			baseConfigurationReference = CC2E232455DFB56635D834EF8FC90D94 /* PSFoundation.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1224,41 +1257,27 @@
 			};
 			name = Release;
 		};
-		6A9596EACC1B00778D5018985C4ABFF6 /* Debug */ = {
+		822668CF259968534586D59DAA51AEA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1538F05584FA47DCAC771D8DAD3B7D8D /* ODSayApiSDK.xcconfig */;
+			baseConfigurationReference = CC2E232455DFB56635D834EF8FC90D94 /* PSFoundation.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PSFoundation";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ODSayApiSDK/ODSayApiSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ODSayApiSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = "Target Support Files/PSFoundation/ResourceBundle-PSFoundation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ODSayApiSDK/ODSayApiSDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ODSayApiSDK;
+				PRODUCT_NAME = PSFoundation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 		87C888249F881BE10719D5AB5C8EB55B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B79D32065BEF2BC700126A58AA1E8592 /* apxml.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1278,45 +1297,15 @@
 				PRODUCT_NAME = apxml;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A0BF2DAB47BF1D7B47D52F9D321063DB /* Debug */ = {
+		A2D1337FBDC65770B413DA4C048FF3BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9463EB11DE165E983BAF26F9EA8EA22 /* w3action.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/w3action/w3action-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/w3action/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/w3action/w3action.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = w3action;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AA3DE08F5FFDF0C0D98223F15E58E2EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F549652245FDE53B8CC436CD44C533 /* PSFoundation.xcconfig */;
+			baseConfigurationReference = CC2E232455DFB56635D834EF8FC90D94 /* PSFoundation.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1343,11 +1332,27 @@
 			};
 			name = Debug;
 		};
+		A9C89FEB4F1F661FCDA798DF943C248C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC2E232455DFB56635D834EF8FC90D94 /* PSFoundation.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PSFoundation";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/PSFoundation/ResourceBundle-PSFoundation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PSFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		AAD381EB3335ED2A8401C6804684CB10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B79D32065BEF2BC700126A58AA1E8592 /* apxml.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1365,35 +1370,6 @@
 				MODULEMAP_FILE = "Target Support Files/apxml/apxml.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = apxml;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AF051BCD5E87FEA5818A3A6FFF9B557B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9463EB11DE165E983BAF26F9EA8EA22 /* w3action.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/w3action/w3action-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/w3action/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/w3action/w3action.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = w3action;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1478,7 +1454,36 @@
 			};
 			name = Debug;
 		};
-		E4FB85B1EC840AF64BA390DAC6C644C7 /* Release */ = {
+		DAA32E4D5B26E3B9F43EE31A2FC79597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9463EB11DE165E983BAF26F9EA8EA22 /* w3action.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/w3action/w3action-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/w3action/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/w3action/w3action.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = w3action;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB5DF28A00551976C3262BE7FC99AFB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1538F05584FA47DCAC771D8DAD3B7D8D /* ODSayApiSDK.xcconfig */;
 			buildSettings = {
@@ -1494,7 +1499,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ODSayApiSDK/ODSayApiSDK-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ODSayApiSDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ODSayApiSDK/ODSayApiSDK.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1510,29 +1515,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06780C87A5039063C4C7A4AFE30E1DDD /* Build configuration list for PBXNativeTarget "w3action" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0BF2DAB47BF1D7B47D52F9D321063DB /* Debug */,
-				AF051BCD5E87FEA5818A3A6FFF9B557B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
 				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3CB47752BA4041ECEE94EE155EFEE99D /* Build configuration list for PBXNativeTarget "PSFoundation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA3DE08F5FFDF0C0D98223F15E58E2EB /* Debug */,
-				42387F3656DB99B382715FD886CCF02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1546,11 +1533,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		809F0B38CA25611C43D8BC11D7EBA5F7 /* Build configuration list for PBXNativeTarget "PSFoundation-PSFoundation" */ = {
+		6EDAE7914933B882E938776F94B68ADB /* Build configuration list for PBXNativeTarget "ODSayApiSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B60CDC2C790D1CA80BBB35815CE2223 /* Debug */,
-				37AA934C4E8D455D0DFCCFAD0553573F /* Release */,
+				1FB74EACA4EC75519AF013763CA44DD7 /* Debug */,
+				EB5DF28A00551976C3262BE7FC99AFB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B83B1330CDAFA60892061C6B148D7C1 /* Build configuration list for PBXNativeTarget "PSFoundation-PSFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C89FEB4F1F661FCDA798DF943C248C /* Debug */,
+				822668CF259968534586D59DAA51AEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8407E4DCDC9AC3A46408607B272EE1D6 /* Build configuration list for PBXNativeTarget "PSFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D1337FBDC65770B413DA4C048FF3BC /* Debug */,
+				29CFEA4D3F31A0015059F2648084EDA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1564,20 +1569,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CA4A917D13E3DB0473B56235778431CD /* Build configuration list for PBXNativeTarget "w3action" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA32E4D5B26E3B9F43EE31A2FC79597 /* Debug */,
+				109690FE289E1A312BF6A9B3F7D971C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D3F2D76FA18F2318FAF0BB1B44768454 /* Build configuration list for PBXNativeTarget "Pods-ODSayApiSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28FEACB43E2AC055AAA8C3FD56D65F4F /* Debug */,
 				5CA09D512C40E938F15C8BCC16364C99 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8A86146F7790C68A6FFE8382E22F4EC /* Build configuration list for PBXNativeTarget "ODSayApiSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A9596EACC1B00778D5018985C4ABFF6 /* Debug */,
-				E4FB85B1EC840AF64BA390DAC6C644C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

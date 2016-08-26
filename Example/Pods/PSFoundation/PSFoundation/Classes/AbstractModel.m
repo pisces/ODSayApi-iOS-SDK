@@ -28,6 +28,31 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
     self.sourceObject = nil;
 }
 
+/**
+ * @constructor
+ */
+- (instancetype)initWithObject:(id)object {
+    self = [super init];
+    
+    if (self) {
+        [self setProperties:object];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithObject:(id)object encode:(BOOL)encode {
+    self = [super init];
+    
+    if (self) {
+        _encode = encode;
+        
+        [self setProperties:object];
+    }
+    
+    return self;
+}
+
 - (id)body {
     return nil;
 }
@@ -66,6 +91,7 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
     
     for (NSString *key in properties) {
         if ([key isEqualToString:@"sourceObject"] ||
+            [key isEqualToString:@"encode"] ||
             (excludes && [excludes indexOfObject:key] != NSNotFound))
             continue;
         
@@ -88,66 +114,45 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
 }
 
 - (id)format:(id)value forKey:(NSString *)key {
-    Class class = [self classOfPropertyNamed:key];
+    NSString *typeString = [self typeStringOfPropertyNamed:key];
     
-    if (class == [NSString class])
-        return [NSString stringWithFormat:@"%@", value];
-    
-    if (class == [NSNumber class]) {
-        if ([value isKindOfClass:[NSNull class]])
-            return nil;
-        
-        id orgValue = [self valueForKey:key];
-        NSString *typeString = @([orgValue objCType]);
-        
-        if (!typeString)
-            return value;
-        
-        if ([typeString isEqualToString:@"c"] ||
-            [typeString isEqualToString:@"B"])
-            return @([value boolValue]);
-        
-        if ([typeString isEqualToString:@"i"])
-            return @([value integerValue]);
-        
-        if ([typeString isEqualToString:@"s"])
-            return @([value shortValue]);
-        
-        if ([typeString isEqualToString:@"l"])
-            return @([value longValue]);
-        
-        if ([typeString isEqualToString:@"q"])
-            return @([value longLongValue]);
-        
-        if ([typeString isEqualToString:@"I"])
-            return @([value unsignedIntegerValue]);
-        
-        if ([typeString isEqualToString:@"L"])
-            return @([value unsignedLongValue]);
-        
-        if ([typeString isEqualToString:@"Q"])
-            return @([value unsignedLongLongValue]);
-        
-        if ([typeString isEqualToString:@"f"])
-            return @([value floatValue]);
-        
-        if ([typeString isEqualToString:@"d"])
-            return @([value doubleValue]);
+    if ([@"NSString" isEqualToString:typeString]) {
+        NSString *string = [NSString stringWithFormat:@"%@", value];
+        return _encode ? string.decode : string;
     }
     
+    if ([typeString isEqualToString:@"c"] ||
+        [typeString isEqualToString:@"B"])
+        return @([value boolValue]);
+    
+    if ([typeString isEqualToString:@"i"])
+        return @([value integerValue]);
+    
+    if ([typeString isEqualToString:@"s"])
+        return @([value shortValue]);
+    
+    if ([typeString isEqualToString:@"l"])
+        return @([value longValue]);
+    
+    if ([typeString isEqualToString:@"q"])
+        return @([value longLongValue]);
+    
+    if ([typeString isEqualToString:@"I"])
+        return @([value unsignedIntegerValue]);
+    
+    if ([typeString isEqualToString:@"L"])
+        return @([value unsignedLongValue]);
+    
+    if ([typeString isEqualToString:@"Q"])
+        return @([value unsignedLongLongValue]);
+    
+    if ([typeString isEqualToString:@"f"])
+        return @([value floatValue]);
+    
+    if ([typeString isEqualToString:@"d"])
+        return @([value doubleValue]);
+    
     return value;
-}
-
-/**
- * @constructor
- */
-- (instancetype)initWithObject:(id)object {
-    self = [super init];
-    
-    if (self)
-        [self setProperties:object];
-    
-    return self;
 }
 
 - (BOOL)isEqualToModel:(AbstractModel *)other {
@@ -213,6 +218,10 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
 }
 
 - (id)unformat:(id)value forKey:(NSString *)key {
+    if ([value isKindOfClass:[NSString class]]) {
+        NSString *string = (NSString *) value;
+        return _encode ? string.encode : string;
+    }
     return value;
 }
 
@@ -222,23 +231,20 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
 
 #pragma mark - Private methods
 
-- (Class)classOfPropertyNamed:(NSString *)propertyName {
-    Class propertyClass = nil;
+- (NSString *)typeStringOfPropertyNamed:(NSString *)propertyName {
     objc_property_t property = class_getProperty([self class], [propertyName UTF8String]);
     
     if (property) {
-        NSString *propertyAttributes = [NSString stringWithCString:property_getAttributes(property) encoding:NSUTF8StringEncoding];
-        NSArray *splitPropertyAttributes = [propertyAttributes componentsSeparatedByString:@","];
+        NSString *attributes = [NSString stringWithCString:property_getAttributes(property) encoding:NSUTF8StringEncoding];
+        NSArray<NSString *> *split = [attributes componentsSeparatedByString:@","];
         
-        if (splitPropertyAttributes.count > 0) {
-            NSString *encodeType = splitPropertyAttributes[0];
-            NSArray *splitEncodeType = [encodeType componentsSeparatedByString:@"\""];
-            NSString *className = splitEncodeType.lastObject;
-            propertyClass = NSClassFromString(className);
+        if (split.count > 0) {
+            NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"(T(@|)(\"|))|(\")" options:0 error:nil];
+            return [regex stringByReplacingMatchesInString:split.firstObject options:NSMatchingReportCompletion range:(NSRange) {0, split.firstObject.length} withTemplate:@""];
         }
     }
     
-    return propertyClass;
+    return  nil;
 }
 
 - (id)dictionaryWithValue:(id)value {

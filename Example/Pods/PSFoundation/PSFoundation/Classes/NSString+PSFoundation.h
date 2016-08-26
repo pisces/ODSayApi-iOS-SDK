@@ -14,6 +14,7 @@
 @property (nonatomic, readonly) NSString *decode;
 @property (nonatomic, readonly) NSString *encode;
 @property (nonatomic, readonly) NSString *formatPhoneNumber;
+@property (nonatomic, readonly) BOOL isWeb;
 @property (nonatomic, readonly) NSString *jpgDataURIWithContent;
 @property (nonatomic, readonly) NSString *pngDataURIWithContent;
 @property (nonatomic, readonly) NSString *trimmedString;

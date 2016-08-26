@@ -59,6 +59,13 @@
     return ([self length] == 0);
 }
 
+- (BOOL)isWeb {
+    NSError *error = nil;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"http|https" options:NSRegularExpressionCaseInsensitive error:&error];
+    NSArray *matches = [regex matchesInString:self options:NSMatchingReportProgress range:(NSRange) {0, self.length}];
+    return matches && matches.count > 0;
+}
+
 - (NSString *)jpgDataURIWithContent; {
     return [NSString stringWithFormat: @"data:image/jpg;base64,%@", self];
 }

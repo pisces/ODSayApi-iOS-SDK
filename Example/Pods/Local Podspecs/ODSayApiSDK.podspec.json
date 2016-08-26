@@ -12,14 +12,17 @@
     "git": "https://github.com/pisces/ODSayApi-iOS-SDK.git",
     "tag": "1.0.0"
   },
-  "platforms": {
-    "ios": "8.0"
-  },
-  "requires_arc": true,
-  "source_files": "ODSayApiSDK/Classes/*.*",
   "dependencies": {
+    "PSFoundation": [
+      "~> 1.0.6"
+    ],
     "w3action": [
 
     ]
-  }
+  },
+  "platforms": {
+    "ios": "8.2"
+  },
+  "requires_arc": true,
+  "source_files": "ODSayApiSDK/Classes/*.*"
 }

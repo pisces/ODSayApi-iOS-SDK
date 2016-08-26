@@ -13,6 +13,7 @@ extern NSString *const kModelDidChangePropertiesNotification;
 extern NSString *const kModelDidSynchronizeNotification;
 
 @interface AbstractModel : BaseObject
+@property (nonatomic) BOOL encode;
 @property (nonatomic, readonly) NSDictionary *dictionary;
 @property (nonatomic, readonly) NSDictionary *sourceObject;
 - (id)childWithArray:(NSArray *)array classType:(Class)classType;
@@ -25,6 +26,7 @@ extern NSString *const kModelDidSynchronizeNotification;
 - (void)equals:(AbstractModel *)other block:(void(^)(BOOL equal))block;
 - (id)format:(id)value forKey:(NSString *)key;
 - (id)initWithObject:(id)object;
+- (id)initWithObject:(id)object encode:(BOOL)encode;
 - (BOOL)isEqualToModel:(AbstractModel *)other;
 - (void)setProperties:(id)object;
 - (void)synchronize:(AbstractModel *)other;

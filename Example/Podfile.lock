@@ -1,9 +1,10 @@
 PODS:
   - apxml (1.0)
   - ODSayApiSDK (1.0.0):
+    - PSFoundation (~> 1.0.6)
     - w3action
   - PSFoundation (1.0.51)
-  - w3action (1.3.4):
+  - w3action (1.3.5):
     - apxml
     - PSFoundation
 
@@ -16,9 +17,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   apxml: 0930b839c8be6734f5091f8c8889b00f7d59559c
-  ODSayApiSDK: ef0204361e81660ce87be60ffe0426cf82bf86ed
+  ODSayApiSDK: e1e727b417cbdd494810305d3876e1bf0de16d91
   PSFoundation: 8546e1ab994991c75427422309317f55088c5a79
-  w3action: ef0f8a85c50a280bc5cd44f3999178c70e94e8bf
+  w3action: a3629c016b5717b041471f38f7985f52b9b0dcef
 
 PODFILE CHECKSUM: 84708def651e014a2e88fda8a2b55e43dc20e20a
 
